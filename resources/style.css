@@ -837,11 +837,11 @@ box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .1);
 
 /* BUTTON 1.5 */
 .btn-1-5 {
-  background-color: var(--light-text-color);
+  background-color: var(--accent-color);
   padding: .7rem 1.5rem;
   border-radius: .2rem;
   transition: all .2s ease;
-  color: var(--accent-color) !important;
+  color: var(--light-text-color) !important;
   font-weight: 500;
 }
 
@@ -1006,7 +1006,7 @@ box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .1);
 
 /* ============================= */
 /* WIDTH 900PX  (IPAD)*/
-@media screen and (max-width: 900px) and (max-height: 1024px) {
+@media screen and (max-width: 900px) {
   /* HEADER */
   #header-desktop {
     display: none;
@@ -1028,7 +1028,7 @@ box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .1);
 
 /* ============================= */
 /* WIDTH 1024PX  (IPAD PRO)*/
-@media  (max-width: 1024px) and (max-height: 1366px) {
+@media  (max-width: 1024px) {
   .slider {
     height: 1200px;
   }
@@ -1316,7 +1316,7 @@ box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .1);
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .slider .content-left .link {
     display: flex;
     flex-direction: column;
@@ -1359,12 +1359,20 @@ box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .1);
   /* ===== HOW WE CAN HELP ====== */
   .how-we-help .container .content-left {
     height: 300px;
+    width: 80%;
+    z-index: 1;
   }
   .how-we-help .container .content-left img {
-    right: 3rem;
     position: relative;
     height: 100%;
     width: auto;
+  }
+  .how-we-help .container .content-right {
+    width: 90%;
+    z-index: 2;
+  }
+  .how-we-help .fill {
+    z-index: 0;
   }
   /* ==== ABOUT US ====== */
   .about-us {
@@ -1375,9 +1383,19 @@ box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .1);
     width: 90%;
   height: 300px;
   }
+  .about-us .content-right img {
+    height: 100%;
+    width: auto;
+  }
   .about-us .content-left {
     width: 100%;
     overflow: visible;
+  }
+  .about-us .content-left a {
+    font-size: 1rem;
+  }
+  .about-us .content-left p {
+    font-size: .9;
   }
   .about-us .container {
     width: 90%;
@@ -1385,6 +1403,32 @@ box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .1);
   .about-us .content-left #volunteer {
     display: none;
   }
+
+  /* MEET OUR CAPTAIN  */
+  .our-captain .container {
+    width: 100%;
+  }
+  .our-captain .content-left {
+    width: 80%;
+    z-index: 2;
+  }
+  .our-captain .content-left img {
+    height: 100%;
+    width: auto;
+  }
+  .our-captain .content-right {
+    z-index: 2;
+  }
+  
+  /* DONATE */
+  .donate .container p {
+    font-size: .9rem;
+  }
+  .donate .container .btn-2 {
+    width: 200px;
+  }
+
+
   /* ==== CONTACT US === */
   .contact-us .container {
     width: 90%;
