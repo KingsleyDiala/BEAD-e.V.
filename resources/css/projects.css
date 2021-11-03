@@ -216,4 +216,7 @@ body {
   .top-banner .crum-container {
     width: 30%;
   }
+  .projects .projects-container .project {
+    width: 90%;
+  }
 }
