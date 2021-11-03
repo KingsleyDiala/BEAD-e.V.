@@ -140,10 +140,11 @@ a {
 #mobile-header {
   display: none;
   z-index: 10;
-  position: fixed;
+  position: sticky;
   width: 100%;
   height: 80px;
   background-color: var(--secondary-color);
+  /* -webkit-backface-visibility: hidden; */
 }
 #mobile-header #open,
 #close {
@@ -550,6 +551,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: rubberBand 2s;
 }
 .donate .container h2 {
   margin-bottom: 2.5rem;
@@ -689,6 +691,73 @@ a {
   color: var(--accent-color) !important;
   background-color: transparent;
 }
+
+
+
+/* ======================== POP UP FORM ============================= */
+.pop-up-form {
+  width: 35%;
+  height: 90vh;
+  background-color: var(--background-fill);
+  padding: 4rem 4rem;
+  border-radius: 0.5rem;
+  margin: auto;
+  display: grid;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+.pop-up-form:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
+}
+.pop-up-form form {
+  display: grid;
+  place-items: center;
+}
+.pop-up-form input {
+  width: 85%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  transition: transform 0.2s ease;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+}
+.pop-up-form input:hover {
+  transform: scale(1.05);
+}
+.pop-up-form textarea {
+  width: 90%;
+  height: 12rem;
+  border: none;
+  font-family: var(--font);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem;
+  transition: transform 0.2s ease;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+}
+.pop-up-form textarea:hover {
+  transform: scale(1.05);
+}
+.pop-up-form input[type="submit"] {
+  width: 40%;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  font-weight: 500;
+}
+.pop-up-form input[type="submit"]:hover {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color) !important;
+  background-color: transparent;
+}
+
+
+
+
 
 /* ================= MAP SECTION ============== */
 .map {
@@ -919,6 +988,48 @@ a {
     transform: scale(1, 0.025);
   }
 }
+
+
+/* RUBBER BAND */
+@keyframes rubberBand {
+  from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
 
 /* ============================== */
 /* MEDIA QUERY */

@@ -1,0 +1,219 @@
+body {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "header-desktop"
+    "header-mobile"
+    "top-banner"
+    "how-we-help"
+    "projects"
+    "top-footer"
+    "bottom-footer";
+}
+
+.top-banner {
+  height: 400px;
+  width: 100%;
+  background: url("/Bead/img/billboard-can-be-used-for-next-holidays-valentine-s-day-mother-s-day-as-well-as-associated-with_t20_omZELe.jpg");
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background-position: center;
+  background-size: cover;
+}
+.top-banner .container {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+.top-banner .crum-container {
+  width: 20%;
+  height: 50px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 10%;
+  bottom: 1rem;
+  column-gap: 1rem;
+}
+.top-banner .crum-container a {
+  color: var(--accent-color);
+}
+.top-banner .crum-container p {
+  color: var(--light-text-color);
+}
+.top-banner h1 {
+  margin-top: 2rem;
+}
+
+/* ================= PROJECTS ==================== */
+.projects {
+  width: 100%;
+  height: 1200px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.projects .container {
+  height: 70%;
+  width: 1200px;
+  position: relative;
+}
+.projects h1 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: var(--dark-text-color);
+}
+.projects .container p {
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.projects .projects-container {
+  display: flex;
+  column-gap: 2rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.projects .projects-container .project {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 32%;
+  height: 90%;
+  position: relative;
+  background-color: rgb(247, 247, 247);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.projects .projects-container .project .image {
+  width: 100%;
+  height: 42%;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 10px solid var(--accent-color);
+}
+.projects .projects-container .project .image img {
+  width: auto;
+  height: 100%;
+  position: relative;
+  right: 2rem;
+  transition: transform 1s ease;
+}
+.projects .projects-container .project .image img:hover {
+  transform: scale(1.1);
+}
+.projects .projects-container .project .image .first {
+  right: 5rem;
+}
+.projects .projects-container .project p {
+  color: var(--dark-text-color);
+  text-align: left;
+  padding: 0 1rem 0 2rem;
+  margin-bottom: 5rem;
+  opacity: 0.6;
+}
+.projects .projects-container .project h3 {
+  text-align: center;
+  margin: 3rem 0rem 2rem;
+  font-size: 2rem;
+}
+.projects .projects-container .project .btn-2 {
+  padding: 1rem 3rem;
+  text-align: center;
+}
+.projects .projects-container .project .btn-2:hover {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color) !important;
+}
+
+/* ========= MEDIA QUERY =========== */
+@media screen and (max-width: 1024px) {
+  .projects .container {
+    width: 900px;
+  }
+  .projects h1 {
+    font-size: 3rem;
+  }
+  .projects .projects-container {
+    column-gap: 1.5rem;
+  }
+  .projects .projects-container .project {
+    height: 90%;
+  }
+  .projects .projects-container .project .image {
+    height: 40%;
+  }
+  .projects .projects-container .project .image img {
+    right: 4rem;
+  }
+  .projects .projects-container .project .image .first {
+    right: 8rem;
+  }
+  .projects .projects-container .project p {
+    margin-bottom: 2rem;
+  }
+  .projects .projects-container .project h3 {
+    padding: 0 2rem;
+    margin: 2rem 0rem 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    height: 3000px;
+  }
+  .projects .container {
+    width: 660px;
+    height: 90%;
+  }
+  .projects .container p {
+    margin-bottom: 0rem;
+  }
+  .projects .projects-container {
+    flex-direction: column;
+    overflow: hidden;
+    row-gap: 2rem;
+  }
+  .projects .projects-container .project {
+    width: 100%;
+    height: 30%;
+  }
+
+  .projects .projects-container .project .image {
+    height: 55%;
+  }
+  .projects .projects-container .project .image img {
+    right: 0rem;
+  }
+  .projects .projects-container .project .image .first {
+    right: 0;
+  }
+  .projects .projects-container .project p {
+    padding: 0 2rem 0 4rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+  .projects .projects-container .project h3 {
+    text-align: left;
+  }
+}
+
+
+/* 425px */
+@media screen and (max-width: 425px) {
+  .top-banner .crum-container {
+    width: 30%;
+  }
+}
