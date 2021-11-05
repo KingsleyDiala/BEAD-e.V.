@@ -37,6 +37,7 @@ body {
     "slider"
     "how-we-help"
     "about-us"
+    "projects"
     "our-captain"
     "donate"
     "contact-us"
@@ -455,6 +456,8 @@ a {
 .about-us .content-right img:hover {
   transform: scale(1.1);
 }
+
+
 
 /* ============================== */
 /* OUR CAPTAIN */
@@ -1269,7 +1272,7 @@ a {
   }
   .slider .content-left p {
     width: 90%;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   .slider .content-left .link {
     margin-top: 6rem;
@@ -1320,7 +1323,7 @@ a {
 
   /* WIE WIR IHNEN HELFEN KÖNNEN */
   .how-we-help {
-    height: 1000px;
+    height: 1200px;
     width: 100%;
     overflow: hidden;
   }
@@ -1333,7 +1336,7 @@ a {
   .how-we-help .container .content-left {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     max-width: 100%;
-    height: 40%;
+    height: 600px;
     margin-top: 4rem;
   }
   .how-we-help .container .content-left img {
@@ -1341,7 +1344,7 @@ a {
     position: relative;
   }
   .how-we-help .fill {
-    height: 40%;
+    height: 500px;
     width: 40%;
     margin-top: -2rem;
     border-bottom-right-radius: 0.6rem;
@@ -1350,25 +1353,27 @@ a {
   /* CONTENT RIGHT */
   .how-we-help .container .content-right {
     max-width: 70%;
-    height: 70%;
+    height: 700px;
     display: block;
   }
   .how-we-help .content-right h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
   .how-we-help .content-right .flex {
     width: 100%;
   }
-  .how-we-help .content-right h6 {
-  }
   .how-we-help .content-right p {
-    max-width: 80%;
+    max-width: 90%;
+    font-size: 1.4rem;
+  }
+  .how-we-help .content-right h6 {
+    font-size: 1.5rem;
   }
 
   /* ABOUT US */
   .about-us {
     overflow: hidden;
-    height: 900px;
+    height: 1300px;
   }
   .about-us .container {
     overflow: hidden;
@@ -1378,7 +1383,7 @@ a {
     row-gap: 2rem;
   }
   .about-us .content-left {
-    height: 60%;
+    height: 700px;
     max-width: 80%;
     background-color: transparent;
   }
@@ -1388,22 +1393,23 @@ a {
   }
   .about-us .content-left p {
     width: 85%;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     margin-top: 2rem;
-    font-size: .9rem;
+    font-size: 1.3rem;
   }
   .about-us .content-left a {
-    font-size: 1rem;
+    font-size: 1.3rem;
+  }
+  .about-us .content-left h2 {
+    font-size: 3rem;
   }
   .about-us .content-right {
     margin-top: 3rem;
     max-width: 100%;
-    height: 50%;
+    max-height: 800px;
     border-radius: 0.6rem;
     overflow: hidden;
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
     margin-bottom: 3rem;
-    max-height: 300px;
   }
   .about-us .content-right img {
     position: relative;
@@ -1413,7 +1419,7 @@ a {
 
   /* meet our captain */
   .our-captain {
-    height: 1000px;
+    height: 1200px;
     overflow: hidden;
   }
   .our-captain .container {
@@ -1426,7 +1432,7 @@ a {
   }
   .our-captain .content-left {
     max-width: 70%;
-    height: 50%;
+    height: 450px;
   }
   .our-captain .content-left img {
     right: 0rem;
@@ -1437,41 +1443,46 @@ a {
   .our-captain .container .fill {
     height: 40%;
     width: 50%;
-    top: 5%;
+    top: 7%;
     border-radius: .6rem;
   }
   .our-captain .content-right {
     max-width: 60%;
   }
   .our-captain .content-right h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
   }
   .our-captain .content-right h6 {
     margin-top: 2rem;
+    font-size: 1.4rem;
   }
   .our-captain .content-right p {
-    width: 95%;
+    width: 100%;
+    font-size: 1.3rem;
   }
 
   /* DONATION */
+  .donate {
+    height: 600px;
+  }
   .donate .container h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .donate .container p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .donate .container a {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   /* contact us */
   .contact-us {
-    height: 1500px;
+    height: 1800px;
   }
   .contact-us .container {
     width: 90%;
     flex-direction: column;
-    row-gap: 1rem;
     justify-content: center;
     align-items: center;
   }
@@ -1479,17 +1490,41 @@ a {
     width: 80%;
     left: 0;
   }
+  .contact-us .content-left h2 {
+    font-size: 3rem;
+  }
+  .contact-us .content-left p {
+    font-size: 1.3rem;
+  }
+  .contact-us .content-left h6 {
+    font-size: 1.5rem;
+  }
   .contact-us .content-right {
     width: 90%;
-    height: 50%;
+    height: 1100px;
     display: block;
     padding: 2rem;
     margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+  .contact-us .content-right input {
+    font-size: 1.2rem;
+    height: 60px;
+  }
+  .contact-us .content-right textarea {
+    font-size: 1.3rem;
+  }
+
+    /* ====== map ====== */
+    .map {
+      height: 700px;
+    }
 
   /* Footer */
   #top-footer {
-    height: 700px;
+    height: 900px;
   }
   #top-footer .container {
     flex-direction: column;
@@ -1499,22 +1534,28 @@ a {
   }
   #top-footer h3 {
     margin-bottom: 1rem;
+    font-size: 3rem;
   }
   #top-footer p {
     padding-right: 0%;
+    font-size: 1.3rem;
+  }
+  #top-footer i {
+    font-size: 3rem;
   }
   #top-footer .container-1 {
     width: 90%;
   }
   #top-footer .mobile-link {
     display: flex;
-    column-gap: 7rem;
+    column-gap: 4rem;
     width: 85%;
     height: auto;
   }
   #top-footer .mobile-link .container-2,
   .container-3 {
-    width: 90%;
+    width: 100%;
+    font-size: 1.3rem;
   }
 }
 
@@ -1522,7 +1563,7 @@ a {
 /* MEDIA QUERY FOR SCREEN WIDTH 500PX */
 @media (max-width: 500px) {
   .slider {
-    height: 2100px;
+    height: 2300px;
   }
   .slider .content-left .link {
     display: flex;
@@ -1663,6 +1704,14 @@ a {
   .about-us .content-left #volunteer {
     display: none;
   }
+
+  /* PROJECTS */
+  .projects .projects-container .project {
+    width: 100% !important;
+    height: 30%;
+  }
+
+
 
   /* MEET OUR CAPTAIN  */
   .our-captain {

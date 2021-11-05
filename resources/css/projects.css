@@ -8,6 +8,8 @@ body {
     "top-banner"
     "how-we-help"
     "projects"
+    "contact-us"
+    "map"
     "top-footer"
     "bottom-footer";
 }
@@ -84,7 +86,6 @@ body {
   align-items: center;
 }
 .projects .projects-container .project {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -95,6 +96,7 @@ body {
   background-color: rgb(247, 247, 247);
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+  box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
 }
 .projects .projects-container .project .image {
   width: 100%;
@@ -171,8 +173,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .top-banner .crum-container {
+    width: 200px;
+  }
   .projects {
-    height: 3000px;
+    height: 3500px;
   }
   .projects .container {
     width: 660px;
@@ -180,10 +185,11 @@ body {
   }
   .projects .container p {
     margin-bottom: 0rem;
+    font-size: 1.3rem;
+    opacity: .7;
   }
   .projects .projects-container {
     flex-direction: column;
-    overflow: hidden;
     row-gap: 2rem;
   }
   .projects .projects-container .project {
@@ -211,12 +217,50 @@ body {
 }
 
 
-/* 425px */
-@media screen and (max-width: 425px) {
-  .top-banner .crum-container {
-    width: 30%;
+/* 500px */
+@media screen and (max-width: 500px) {
+  .top-banner {
+    height: 700px;
+  }
+  .projects {
+    height: 4500px;
+  }
+  .projects h1 {
+    font-size: 4rem;
+  }
+  .projects p {
+    font-size: 1.8rem !important;
+  }
+  .projects .projects-container {
+    row-gap: 4rem;
   }
   .projects .projects-container .project {
     width: 90%;
+    height: 1250px;
+    box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
+  }
+  .projects .projects-container .project .image .first {
+    right: 30%;
+  }
+  .projects .projects-container .project .image .second {
+    right: 25%;
+  }
+  .projects .projects-container .project .first {
+    right: 7rem;
+    position: relative;
+  }
+  .projects .projects-container .project h3 {
+    font-size: 3rem;
+  }
+  .projects .projects-container .project p {
+    font-size: 1.5rem;
+  }
+  .projects .projects-container .project a {
+    font-size: 1.5rem;
+  }
+
+  /* CONTACT FORM */
+  .contact-us {
+    height: 2800px;
   }
 }
