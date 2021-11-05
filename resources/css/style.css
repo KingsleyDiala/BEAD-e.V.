@@ -186,7 +186,7 @@ a {
 #mobile-header .nav_links ul {
   display: flex;
   flex-direction: column;
-  row-gap: 4rem;
+  row-gap: 5rem;
 }
 #mobile-header .nav_links ul a {
   color: var(--light-text-color);
