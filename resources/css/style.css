@@ -153,16 +153,16 @@ a {
   color: var(--light-text-color);
   position: absolute;
   top: 2.5rem;
-  right: 2rem;
-  font-size: 2rem;
+  right: 3rem;
+  font-size: 4rem;
 }
 #mobile-header .logo {
   cursor: pointer;
-  height: 50px;
+  height: 80px;
   width: auto;
   position: relative;
   top: 2rem;
-  left: 2rem;
+  left: 3rem;
 }
 #mobile-header .logo img {
   height: 100%;
@@ -1326,7 +1326,7 @@ a {
   .how-we-help .container {
     overflow: hidden;
     flex-direction: column;
-    row-gap: 4rem;
+    row-gap: 7rem;
     width: 100%;
   }
   .how-we-help .container .content-left {
@@ -1358,6 +1358,8 @@ a {
   .how-we-help .content-right .flex {
     width: 100%;
   }
+  .how-we-help .content-right h6 {
+  }
   .how-we-help .content-right p {
     max-width: 80%;
   }
@@ -1372,6 +1374,7 @@ a {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    row-gap: 2rem;
   }
   .about-us .content-left {
     height: 60%;
@@ -1467,7 +1470,7 @@ a {
   .contact-us .container {
     width: 90%;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 1rem;
     justify-content: center;
     align-items: center;
   }
@@ -1518,7 +1521,7 @@ a {
 /* MEDIA QUERY FOR SCREEN WIDTH 500PX */
 @media (max-width: 500px) {
   .slider {
-    height: 2000px;
+    height: 2100px;
   }
   .slider .content-left .link {
     display: flex;
@@ -1535,7 +1538,7 @@ a {
     right: 10%;
   }
   .slider .content-left h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     margin-bottom: 4rem;
   }
   .slider .content-left p {
@@ -1548,8 +1551,13 @@ a {
   .slider .content-left a:last-child {
     margin-left: 0;
   }
+  .slider .content-left .link .btn-1 {
+    font-size: 2.5rem;
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+  }
   .slider .content-right {
-    height: 750px;
+    height: 900px;
     max-width: 100%;
   }
   .slider .content-right img {
@@ -1577,10 +1585,14 @@ a {
   }
     /* ===== HOW WE CAN HELP ====== */
     .how-we-help {
-      height: 1700px;
+      height: 1800px;
+    }
+    .how-we-help .container {
+      position: relative;
+      top: 5%;
     }
   .how-we-help .container .content-left {
-    height: 600px;
+    height: 750px;
     max-width: 95%;
     z-index: 1;
   }
@@ -1588,20 +1600,22 @@ a {
     position: relative;
     height: 100%;
     width: auto;
+    right: 15%;
   }
   .how-we-help .container .content-right {
-    height: 600px;
+    height: 700px;
     max-width: 80%;
     z-index: 2;
   }
   .how-we-help .container .content-right h2 {
     font-size: 4rem;
+    margin-bottom: 5rem;
   }
   .how-we-help .container .content-right h6 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .how-we-help .container .content-right p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     max-width: 100%;
   }
   .how-we-help .fill {
@@ -1620,7 +1634,6 @@ a {
   .about-us .content-right {
     width: 100%;
     max-height: 600px;
-    position: relative;
   }
   .about-us .content-right img {
     height: 100%;
@@ -1633,13 +1646,15 @@ a {
     overflow: visible;
   }
   .about-us .content-left h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   .about-us .content-left a {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
   }
   .about-us .content-left p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
   }
   .about-us .container {
     width: 90%;
@@ -1678,7 +1693,10 @@ a {
     margin-bottom: 3rem;
   }
   .our-captain .content-right p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+  .our-captain .content-right h6 {
+    font-size: 2rem;
   }
 
 
@@ -1690,54 +1708,62 @@ a {
     max-width: 100%;
   }
   .donate .container h2 {
-    font-size: 4rem;
+    font-size: 5rem;
     padding: 0 4rem;
     margin-bottom: 3rem;
   }
   .donate .container p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 5rem;
   }
   .donate .container .btn-2 {
-    width: 300px;
-    font-size: 1.5rem;
-    padding: 1rem 0rem;
+    width: 400px;
+    font-size: 1.8rem;
+    padding: 1.5rem 0rem;
   }
 
   /* ==== CONTACT US === */
   .contact-us {
-    height: 2100px;
+    height: 2500px;
+    width: 100%;
   }
   .contact-us .container {
-    width: 100%;
+    max-width: 100%;
   }
   .contact-us .content-left {
     width: 90%;
   }
   .contact-us .content-left h2 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .contact-us .content-left p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .contact-us .content-left h6 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .contact-us .content-left i {
     font-size: 4rem;
   }
   .contact-us .content-right {
     width: 100%;
-    height: 1200px;
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .contact-us .content-right input {
     width: 90%;
+    height: 80px;
     margin-top: 1rem;
+    font-size: 1.8rem;
   }
   .contact-us .content-right textarea {
     width: 90%;
+    height: 250px;
     margin-top:  1rem;
     margin-bottom: 4rem;
+    font-size: 1.8rem;
   }
   .contact-us .content-right input[type="submit"] {
     width: 80%;
@@ -1745,7 +1771,7 @@ a {
 
   /* ====== map ====== */
   .map {
-    height: 800px;
+    height: 1000px;
   }
   /* === FOOTER ===== */
   #top-footer {
