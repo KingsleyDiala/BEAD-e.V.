@@ -172,10 +172,10 @@ a {
   position: fixed;
   background-color: var(--secondary-color);
   right: -100%;
-  top: 80px;
-  width: 70%;
+  top: 130px;
+  width: 80%;
   height: 100%;
-  padding: 3rem;
+  padding: 15% 3rem !important;
   transition: 0.4s;
   box-shadow: -10px 50px 115px 10px rgba(0, 0, 0, 0.7);
   border-top-left-radius: 1rem;
@@ -191,8 +191,9 @@ a {
 #mobile-header .nav_links ul a {
   color: var(--light-text-color);
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.1rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: .15rem;
 }
 
 /* ============================== */
