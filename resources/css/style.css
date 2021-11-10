@@ -29,7 +29,7 @@ html {
 /* ============================== */
 body {
   height: auto;
-  width: 100%;
+  width: auto;
   display: grid;
   grid-template-areas:
     "header-desktop"
@@ -84,6 +84,7 @@ a {
 /* ============================== */
 /* HEADER */
 #header-desktop {
+  overflow: hidden;
   height: 80px;
   width: 100%;
   background-color: var(--secondary-color);
@@ -139,6 +140,7 @@ a {
 /* ============================== */
 /* MOBILE HEADER */
 #mobile-header {
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -455,6 +457,15 @@ a {
 }
 .about-us .content-right img:hover {
   transform: scale(1.1);
+}
+
+/* ================= PROJECTS ================ */
+.projects {
+  width: 100%;
+  height: 1200px;
+  display: grid;
+  place-items: center;
+  position: relative;
 }
 
 
@@ -853,6 +864,7 @@ a {
 /* ============================== */
 /* BOTTOM FOOTER */
 #bottom-footer {
+  overflow: hidden;
   background-color: #090543;
   width: 100%;
   height: 70px;
@@ -1054,6 +1066,85 @@ a {
   }
 }
 
+/* ============================= */
+/* WIDTH 1024PX )*/
+@media (max-width: 1024px) {
+  .slider .foreground {
+    top: 15%;
+  }
+
+  .slider .content-right img {
+    right: 20%;
+    position: relative;
+  }
+  .slider .content-left h1 {
+    font-size: 2.5rem;
+  }
+  .slider .content-left p {
+    font-size: 1rem;
+  }
+
+  .how-we-help .container .content-left img {
+    right: 6rem;
+    position: relative;
+  }
+  .how-we-help .container .content-right {
+    max-width: 40%;
+  }
+  .how-we-help .content-right h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-us .content-left > * {
+    left: 10%;
+  }
+  .about-us .content-left p {
+    font-size: 1rem;
+    width: 75%;
+    margin-bottom: 2rem;
+  }
+  .about-us .content-left h2 {
+    font-size: 1.9rem;
+    margin-top: 2rem;
+  }
+
+  .our-captain .content-left {
+    max-width: 40%;
+    max-height: 75%;
+  }
+  .our-captain .content-left img {
+    position: relative;
+    right: 50%;
+  }
+  .our-captain .content-right {
+    max-width: 40%;
+  }
+  .our-captain .content-right h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .our-captain .content-right p {
+    margin-bottom: 2rem;
+  }
+
+  .contact-us .content-left {
+    left: 0%;
+  }
+  .contact-us .content-right {
+    width: 70%;
+  }
+  .contact-us .content-right input {
+    width: 100%;
+  }
+  .contact-us .content-right textarea {
+    width: 100%;
+  }
+  .contact-us .content-right input[type="submit"] {
+    width: 50%;
+  }
+}
+
+
 @media (max-width: 1200px) {
   /* slider */
   .slider .foreground {
@@ -1137,83 +1228,6 @@ a {
   }
 }
 
-/* ============================= */
-/* WIDTH 1024PX )*/
-@media (max-width: 1024px) {
-  .slider .foreground {
-    top: 15%;
-  }
-
-  .slider .content-right img {
-    right: 20%;
-    position: relative;
-  }
-  .slider .content-left h1 {
-    font-size: 2.5rem;
-  }
-  .slider .content-left p {
-    font-size: 1rem;
-  }
-
-  .how-we-help .container .content-left img {
-    right: 6rem;
-    position: relative;
-  }
-  .how-we-help .container .content-right {
-    max-width: 40%;
-  }
-  .how-we-help .content-right h2 {
-    font-size: 1.8rem;
-  }
-
-  .about-us .content-left > * {
-    left: 10%;
-  }
-  .about-us .content-left p {
-    font-size: 1rem;
-    width: 75%;
-    margin-bottom: 2rem;
-  }
-  .about-us .content-left h2 {
-    font-size: 1.9rem;
-    margin-top: 2rem;
-  }
-
-  .our-captain .content-left {
-    max-width: 40%;
-    max-height: 75%;
-  }
-  .our-captain .content-left img {
-    position: relative;
-    right: 50%;
-  }
-  .our-captain .content-right {
-    max-width: 40%;
-  }
-  .our-captain .content-right h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  .our-captain .content-right p {
-    margin-bottom: 2rem;
-  }
-
-  .contact-us .content-left {
-    left: 0%;
-  }
-  .contact-us .content-right {
-    width: 70%;
-  }
-  .contact-us .content-right input {
-    width: 100%;
-  }
-  .contact-us .content-right textarea {
-    width: 100%;
-  }
-  .contact-us .content-right input[type="submit"] {
-    width: 50%;
-  }
-}
 
 /* ============================= */
 /* WIDTH 900PX  (IPAD)*/
@@ -1464,6 +1478,7 @@ a {
 
   /* DONATION */
   .donate {
+    overflow: hidden;
     height: 600px;
   }
   .donate .container h2 {
@@ -1478,6 +1493,7 @@ a {
 
   /* contact us */
   .contact-us {
+    overflow: hidden;
     height: 1800px;
   }
   .contact-us .container {
@@ -1520,10 +1536,12 @@ a {
     /* ====== map ====== */
     .map {
       height: 700px;
+      overflow: hidden;
     }
 
   /* Footer */
   #top-footer {
+    overflow: hidden;
     height: 900px;
   }
   #top-footer .container {
@@ -1707,8 +1725,7 @@ a {
 
   /* PROJECTS */
   .projects .projects-container .project {
-    width: 100% !important;
-    height: 30%;
+    width: 90%;
   }
 
 
