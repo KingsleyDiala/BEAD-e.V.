@@ -1,0 +1,37 @@
+
+body {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "header-desktop"
+    "header-mobile"
+    "top-banner"
+    "tennies-project"
+    "top-footer"
+    "bottom-footer";
+}
+
+/* ================= PROJECTS ==================== */
+.tennies-project {
+  display: none;
+  height: 1500px;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+}
+
+.tennies-project .container {
+  overflow: hidden;
+  width: 1200px;
+  height: 80%;
+}
+.tennies-project .container .image-container {
+  width: 609px;
+  height: 358px;
+  overflow: hidden;
+}
+.tennies-project .container .image-container .image {
+  width: 100%;
+  height: auto;
+}
