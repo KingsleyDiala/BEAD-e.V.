@@ -84,7 +84,6 @@ a {
 /* ============================== */
 /* HEADER */
 #header-desktop {
-  overflow: hidden;
   height: 80px;
   width: 100%;
   background-color: var(--secondary-color);
@@ -140,7 +139,6 @@ a {
 /* ============================== */
 /* MOBILE HEADER */
 #mobile-header {
-  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -204,7 +202,6 @@ a {
 .slider {
   width: 100%;
   height: 700px;
-  overflow: hidden;
   position: relative;
 }
 .slider::before {
@@ -313,7 +310,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   padding: 50px 0px;
 }
 .how-we-help .container {
@@ -459,13 +455,90 @@ a {
   transform: scale(1.1);
 }
 
-/* ================= PROJECTS ================ */
+/* ================= PROJECTS ==================== */
 .projects {
   width: 100%;
   height: 1200px;
   display: grid;
   place-items: center;
   position: relative;
+}
+.projects .container {
+  height: 70%;
+  width: 1200px;
+  position: relative;
+}
+.projects h1 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: var(--dark-text-color);
+}
+.projects .container p {
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.projects .projects-container {
+  display: flex;
+  column-gap: 2rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.projects .projects-container .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 32%;
+  height: 90%;
+  position: relative;
+  background-color: rgb(247, 247, 247);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
+}
+.projects .projects-container .project .image {
+  width: 100%;
+  height: 42%;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 10px solid var(--accent-color);
+}
+.projects .projects-container .project .image img {
+  width: auto;
+  height: 100%;
+  position: relative;
+  right: 2rem;
+  transition: transform 1s ease;
+}
+.projects .projects-container .project .image img:hover {
+  transform: scale(1.1);
+}
+.projects .projects-container .project .image .first {
+  right: 5rem;
+}
+.projects .projects-container .project p {
+  color: var(--dark-text-color);
+  text-align: left;
+  padding: 0 1rem 0 2rem;
+  margin-bottom: 5rem;
+  opacity: 0.6;
+}
+.projects .projects-container .project h3 {
+  text-align: center;
+  margin: 3rem 0rem 2rem;
+  font-size: 2rem;
+}
+.projects .projects-container .project .btn-2 {
+  padding: 1rem 3rem;
+  text-align: center;
+}
+.projects .projects-container .project .btn-2:hover {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color) !important;
 }
 
 
@@ -603,7 +676,6 @@ a {
   height: 900px;
   display: grid;
   place-items: center;
-  overflow: hidden;
 }
 .contact-us .container {
   max-width: 80%;
@@ -713,8 +785,8 @@ a {
 
 /* ======================== POP UP FORM ============================= */
 .pop-up-form {
-  width: 35%;
-  height: 90vh;
+  max-width: 500px;
+  height: 600px;
   background-color: var(--background-fill);
   padding: 4rem 4rem;
   border-radius: 0.5rem;
@@ -780,7 +852,6 @@ a {
 .map {
   width: 100%;
   height: 400px;
-  overflow: hidden;
 }
 .map .google-map {
   width: 100%;
@@ -864,7 +935,6 @@ a {
 /* ============================== */
 /* BOTTOM FOOTER */
 #bottom-footer {
-  overflow: hidden;
   background-color: #090543;
   width: 100%;
   height: 70px;
@@ -1106,6 +1176,36 @@ a {
   .about-us .content-left h2 {
     font-size: 1.9rem;
     margin-top: 2rem;
+  }
+
+  .projects .container {
+    width: 900px;
+  }
+  .projects h1 {
+    font-size: 3rem;
+  }
+  .projects .projects-container {
+    column-gap: 1.5rem;
+  }
+  .projects .projects-container .project {
+    height: 90%;
+  }
+  .projects .projects-container .project .image {
+    height: 40%;
+  }
+  .projects .projects-container .project .image img {
+    right: 4rem;
+  }
+  .projects .projects-container .project .image .first {
+    right: 8rem;
+  }
+  .projects .projects-container .project p {
+    margin-bottom: 2rem;
+  }
+  .projects .projects-container .project h3 {
+    padding: 0 2rem;
+    margin: 2rem 0rem 2rem;
+    font-size: 1.8rem;
   }
 
   .our-captain .content-left {
@@ -1431,6 +1531,47 @@ a {
     width: auto;
   }
 
+
+  /* PROJECT */
+  .projects {
+    height: 3500px;
+  }
+  .projects .container {
+    width: 660px;
+    height: 90%;
+  }
+  .projects .container p {
+    margin-bottom: 0rem;
+    font-size: 1.3rem;
+    opacity: .7;
+  }
+  .projects .projects-container {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .projects .projects-container .project {
+    width: 100%;
+    height: 30%;
+  }
+
+  .projects .projects-container .project .image {
+    height: 55%;
+  }
+  .projects .projects-container .project .image img {
+    right: 0rem;
+  }
+  .projects .projects-container .project .image .first {
+    right: 0;
+  }
+  .projects .projects-container .project p {
+    padding: 0 2rem 0 4rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+  .projects .projects-container .project h3 {
+    text-align: left;
+  }
+
   /* meet our captain */
   .our-captain {
     height: 1200px;
@@ -1724,8 +1865,42 @@ a {
   }
 
   /* PROJECTS */
+  .projects {
+    height: 4500px;
+  }
+  .projects h1 {
+    font-size: 4rem;
+  }
+  .projects p {
+    font-size: 1.8rem !important;
+  }
+  .projects .projects-container {
+    row-gap: 4rem;
+    width: 100%;
+  }
   .projects .projects-container .project {
-    width: 90%;
+    width: 100%;
+    height: 1250px;
+    box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
+  }
+  .projects .projects-container .project .image .first {
+    right: 30%;
+  }
+  .projects .projects-container .project .image .second {
+    right: 25%;
+  }
+  .projects .projects-container .project .first {
+    right: 7rem;
+    position: relative;
+  }
+  .projects .projects-container .project h3 {
+    font-size: 3rem;
+  }
+  .projects .projects-container .project p {
+    font-size: 1.5rem;
+  }
+  .projects .projects-container .project a {
+    font-size: 1.5rem;
   }
 
 
