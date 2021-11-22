@@ -29,21 +29,7 @@ html {
 /* ============================== */
 body {
   height: auto;
-  width: auto;
-  display: grid;
-  grid-template-areas:
-    "header-desktop"
-    "header-mobile"
-    "slider"
-    "how-we-help"
-    "about-us"
-    "projects"
-    "our-captain"
-    "donate"
-    "contact-us"
-    "map"
-    "top-footer"
-    "bottom-footer";
+  width: 100%;
 }
 
 /* ============================== */
@@ -145,7 +131,7 @@ a {
   display: none;
   z-index: 10;
   width: 100%;
-  height: 130px;
+  height: 90px;
   background-color: var(--secondary-color);
   /* -webkit-backface-visibility: hidden; */
 }
@@ -153,17 +139,17 @@ a {
 #close {
   color: var(--light-text-color);
   position: absolute;
-  top: 2.5rem;
-  right: 3rem;
-  font-size: 4rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
 }
 #mobile-header .logo {
   cursor: pointer;
-  height: 80px;
+  height: 45px;
   width: auto;
   position: relative;
-  top: 2rem;
-  left: 3rem;
+  top: 1.5rem;
+  left: 1.5rem;
 }
 #mobile-header .logo img {
   height: 100%;
@@ -173,7 +159,7 @@ a {
   position: fixed;
   background-color: var(--secondary-color);
   right: -100%;
-  top: 130px;
+  top: 90px;
   width: 80%;
   height: 100%;
   padding: 15% 3rem !important;
@@ -187,14 +173,14 @@ a {
 #mobile-header .nav_links ul {
   display: flex;
   flex-direction: column;
-  row-gap: 5rem;
+  row-gap: 3rem;
 }
 #mobile-header .nav_links ul a {
   color: var(--light-text-color);
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: .15rem;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
 }
 
 /* ============================== */
@@ -455,94 +441,6 @@ a {
   transform: scale(1.1);
 }
 
-/* ================= PROJECTS ==================== */
-.projects {
-  width: 100%;
-  height: 1200px;
-  display: grid;
-  place-items: center;
-  position: relative;
-}
-.projects .container {
-  height: 70%;
-  width: 1200px;
-  position: relative;
-}
-.projects h1 {
-  margin-bottom: 0.5rem;
-  text-align: center;
-  color: var(--dark-text-color);
-}
-.projects .container p {
-  color: var(--accent-color);
-  text-align: center;
-  margin-bottom: 3rem;
-}
-.projects .projects-container {
-  display: flex;
-  column-gap: 2rem;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-.projects .projects-container .project {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 32%;
-  height: 90%;
-  position: relative;
-  background-color: rgb(247, 247, 247);
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
-}
-.projects .projects-container .project .image {
-  width: 100%;
-  height: 42%;
-  position: relative;
-  overflow: hidden;
-  border-bottom: 10px solid var(--accent-color);
-}
-.projects .projects-container .project .image img {
-  width: auto;
-  height: 100%;
-  position: relative;
-  right: 2rem;
-  transition: transform 1s ease;
-}
-.projects .projects-container .project .image img:hover {
-  transform: scale(1.1);
-}
-.projects .projects-container .project .image .first {
-  right: 5rem;
-}
-.projects .projects-container .project p {
-  color: var(--dark-text-color);
-  text-align: left;
-  padding: 0 1rem 0 2rem;
-  margin-bottom: 5rem;
-  opacity: 0.6;
-}
-.projects .projects-container .project h3 {
-  text-align: center;
-  margin: 3rem 0rem 2rem;
-  font-size: 2rem;
-}
-.projects .projects-container .project .btn-2 {
-  padding: 1rem 3rem;
-  text-align: center;
-}
-.projects .projects-container .project .btn-2:hover {
-  border: 2px solid var(--accent-color);
-  color: var(--accent-color) !important;
-}
-
-
-
 /* ============================== */
 /* OUR CAPTAIN */
 .our-captain {
@@ -781,8 +679,6 @@ a {
   background-color: transparent;
 }
 
-
-
 /* ======================== POP UP FORM ============================= */
 .pop-up-form {
   max-width: 500px;
@@ -843,10 +739,6 @@ a {
   color: var(--accent-color) !important;
   background-color: transparent;
 }
-
-
-
-
 
 /* ================= MAP SECTION ============== */
 .map {
@@ -950,6 +842,167 @@ a {
 #bottom-footer p {
   color: var(--light-text-color);
 }
+
+/* ==================   PROJECT PAGE START ======================= */
+
+.top-banner {
+  height: 400px;
+  width: 100%;
+  background: url("/img/billboard-can-be-used-for-next-holidays-valentine-s-day-mother-s-day-as-well-as-associated-with_t20_omZELe.jpg");
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background-position: center;
+  background-size: cover;
+}
+.top-banner .container {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+.top-banner .crum-container {
+  width: 20%;
+  height: 50px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 10%;
+  bottom: 1rem;
+  column-gap: 1rem;
+}
+.top-banner .crum-container a {
+  color: var(--accent-color);
+  transition: color 0.5s ease;
+}
+.top-banner .crum-container a:hover {
+  color: var(--light-text-color);
+}
+.top-banner .crum-container p {
+  color: var(--light-text-color);
+}
+.top-banner h1 {
+  margin-top: 2rem;
+}
+
+/* ================= PROJECTS ==================== */
+.projects {
+  overflow: hidden;
+  width: 100%;
+  height: 1200px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.projects .container {
+  height: 70%;
+  width: 1200px;
+  position: relative;
+}
+.projects h1 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: var(--dark-text-color);
+}
+.projects .container p {
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.projects .projects-container {
+  display: flex;
+  column-gap: 2rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.projects .projects-container .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 32%;
+  height: 90%;
+  position: relative;
+  background-color: rgb(247, 247, 247);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
+}
+.projects .projects-container .project .image {
+  width: 100%;
+  height: 42%;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 10px solid var(--accent-color);
+}
+.projects .projects-container .project .image img {
+  width: auto;
+  height: 100%;
+  position: relative;
+  right: 2rem;
+  transition: transform 1s ease;
+}
+.projects .projects-container .project .image img:hover {
+  transform: scale(1.1);
+}
+.projects .projects-container .project .image .first {
+  right: 5rem;
+}
+.projects .projects-container .project p {
+  color: var(--dark-text-color);
+  text-align: left;
+  padding: 0 1rem 0 2rem;
+  margin-bottom: 5rem;
+  opacity: 0.6;
+}
+.projects .projects-container .project h3 {
+  text-align: center;
+  margin: 3rem 0rem 2rem;
+  font-size: 2rem;
+}
+.projects .projects-container .project .btn-2 {
+  padding: 1rem 3rem;
+  text-align: center;
+}
+.projects .projects-container .project .btn-2:hover {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color) !important;
+}
+
+
+/* ======================== PROJECT PAGE END ============================ */
+
+/* ================= TEENIES PROJECT START ==================== */
+.tennies-project {
+  height: 1500px !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  display: grid !important;
+  place-content: center !important;
+}
+
+.tennies-project .container {
+  overflow: hidden !important;
+  width: 1200px !important;
+  height: 80% !important;
+}
+.tennies-project .container .image-container {
+  width: 609px !important;
+  height: 358px !important;
+  overflow: hidden !important;
+}
+.tennies-project .container .image-container .img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* ======================== TEENIES PROJECT END ======================== */
 
 /* ============================== */
 /* UTILITIES */
@@ -1077,47 +1130,43 @@ a {
   }
 }
 
-
 /* RUBBER BAND */
 @keyframes rubberBand {
   from {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 
   30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-      transform: scale3d(1.25, 0.75, 1);
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
   }
 
   40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-      transform: scale3d(0.75, 1.25, 1);
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
   }
 
   50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-      transform: scale3d(1.15, 0.85, 1);
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
   }
 
   65% {
-      -webkit-transform: scale3d(0.95, 1.05, 1);
-      transform: scale3d(0.95, 1.05, 1);
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
 
   75% {
-      -webkit-transform: scale3d(1.05, 0.95, 1);
-      transform: scale3d(1.05, 0.95, 1);
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
 
   to {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
-
-
-
 
 /* ============================== */
 /* MEDIA QUERY */
@@ -1178,36 +1227,6 @@ a {
     margin-top: 2rem;
   }
 
-  .projects .container {
-    width: 900px;
-  }
-  .projects h1 {
-    font-size: 3rem;
-  }
-  .projects .projects-container {
-    column-gap: 1.5rem;
-  }
-  .projects .projects-container .project {
-    height: 90%;
-  }
-  .projects .projects-container .project .image {
-    height: 40%;
-  }
-  .projects .projects-container .project .image img {
-    right: 4rem;
-  }
-  .projects .projects-container .project .image .first {
-    right: 8rem;
-  }
-  .projects .projects-container .project p {
-    margin-bottom: 2rem;
-  }
-  .projects .projects-container .project h3 {
-    padding: 0 2rem;
-    margin: 2rem 0rem 2rem;
-    font-size: 1.8rem;
-  }
-
   .our-captain .content-left {
     max-width: 40%;
     max-height: 75%;
@@ -1242,8 +1261,39 @@ a {
   .contact-us .content-right input[type="submit"] {
     width: 50%;
   }
-}
 
+/* ============================= */
+/* PROJECTS */
+  .projects .container {
+    width: 900px;
+  }
+  .projects h1 {
+    font-size: 3rem;
+  }
+  .projects .projects-container {
+    column-gap: 1.5rem;
+  }
+  .projects .projects-container .project {
+    height: 90%;
+  }
+  .projects .projects-container .project .image {
+    height: 40%;
+  }
+  .projects .projects-container .project .image img {
+    right: 4rem;
+  }
+  .projects .projects-container .project .image .first {
+    right: 8rem;
+  }
+  .projects .projects-container .project p {
+    margin-bottom: 2rem;
+  }
+  .projects .projects-container .project h3 {
+    padding: 0 2rem;
+    margin: 2rem 0rem 2rem;
+    font-size: 1.8rem;
+  }
+}
 
 @media (max-width: 1200px) {
   /* slider */
@@ -1292,7 +1342,7 @@ a {
   }
   .about-us .content-left p {
     margin-bottom: 3rem;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .about-us .content-right {
     max-width: 50%;
@@ -1327,7 +1377,6 @@ a {
     width: 60%;
   }
 }
-
 
 /* ============================= */
 /* WIDTH 900PX  (IPAD)*/
@@ -1531,8 +1580,10 @@ a {
     width: auto;
   }
 
-
   /* PROJECT */
+  .top-banner .crum-container {
+    width: 200px;
+  }
   .projects {
     height: 3500px;
   }
@@ -1543,7 +1594,7 @@ a {
   .projects .container p {
     margin-bottom: 0rem;
     font-size: 1.3rem;
-    opacity: .7;
+    opacity: 0.7;
   }
   .projects .projects-container {
     flex-direction: column;
@@ -1571,7 +1622,6 @@ a {
   .projects .projects-container .project h3 {
     text-align: left;
   }
-
   /* meet our captain */
   .our-captain {
     height: 1200px;
@@ -1599,7 +1649,7 @@ a {
     height: 40%;
     width: 50%;
     top: 7%;
-    border-radius: .6rem;
+    border-radius: 0.6rem;
   }
   .our-captain .content-right {
     max-width: 60%;
@@ -1674,11 +1724,11 @@ a {
     font-size: 1.3rem;
   }
 
-    /* ====== map ====== */
-    .map {
-      height: 700px;
-      overflow: hidden;
-    }
+  /* ====== map ====== */
+  .map {
+    height: 700px;
+    overflow: hidden;
+  }
 
   /* Footer */
   #top-footer {
@@ -1718,11 +1768,10 @@ a {
   }
 }
 
-
 /* MEDIA QUERY FOR SCREEN WIDTH 500PX */
 @media (max-width: 500px) {
   .slider {
-    height: 2300px;
+    height: 1500px;
   }
   .slider .content-left .link {
     display: flex;
@@ -1732,34 +1781,35 @@ a {
     align-items: flex-start;
   }
   .slider .foreground {
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
     z-index: -1;
     top: 6%;
     right: 10%;
   }
   .slider .content-left h1 {
-    font-size: 6rem;
-    margin-bottom: 4rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
   }
   .slider .content-left p {
-    font-size: 2rem;
-    margin-bottom: 6rem;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
   }
   .slider .content-left a {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .slider .content-left a:last-child {
     margin-left: 0;
   }
   .slider .content-left .link .btn-1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     background-color: var(--accent-color);
     color: var(--light-text-color);
   }
   .slider .content-right {
-    height: 900px;
-    max-width: 100%;
+    height: 500px;
+    width: 100%;
+    margin-bottom: -3rem;
   }
   .slider .content-right img {
     position: relative;
@@ -1784,16 +1834,17 @@ a {
   .donate .container .btn-2 {
     width: 60%;
   }
-    /* ===== HOW WE CAN HELP ====== */
-    .how-we-help {
-      height: 1800px;
-    }
-    .how-we-help .container {
-      position: relative;
-      top: 5%;
-    }
+  /* ===== HOW WE CAN HELP ====== */
+  .how-we-help {
+    height: 1200px;
+  }
+  .how-we-help .container {
+    position: relative;
+    top: 5%;
+    row-gap: 3.5rem;
+  }
   .how-we-help .container .content-left {
-    height: 750px;
+    height: 400px;
     max-width: 95%;
     z-index: 1;
   }
@@ -1801,7 +1852,7 @@ a {
     position: relative;
     height: 100%;
     width: auto;
-    right: 15%;
+    right: 30%;
   }
   .how-we-help .container .content-right {
     height: 700px;
@@ -1809,15 +1860,18 @@ a {
     z-index: 2;
   }
   .how-we-help .container .content-right h2 {
-    font-size: 4rem;
-    margin-bottom: 5rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
   .how-we-help .container .content-right h6 {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
   }
   .how-we-help .container .content-right p {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     max-width: 100%;
+  }
+  .how-we-help .container .content-right i {
+    display:  none;
   }
   .how-we-help .fill {
     z-index: 0;
@@ -1825,16 +1879,24 @@ a {
   }
   /* ==== ABOUT US ====== */
   .about-us {
-    height: 1800px;
+    height: 1200px;
     overflow: visible;
     position: relative;
+    width: 100%;
   }
   .about-us .container {
-    overflow: visible;
+    overflow: hidden;
+    width: 100% !important;
+    row-gap: 1rem;
+    height: 95%;
   }
   .about-us .content-right {
-    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 350px !important;
+    width: 95%;
     max-height: 600px;
+    margin-bottom: 0;
   }
   .about-us .content-right img {
     height: 100%;
@@ -1847,14 +1909,14 @@ a {
     overflow: visible;
   }
   .about-us .content-left h2 {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
   }
   .about-us .content-left a {
-    font-size: 2rem;
-    padding: 1.5rem 2.5rem;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
   }
   .about-us .content-left p {
-    font-size: 1.8rem;
+    font-size: 1.05rem;
     margin-bottom: 4rem;
   }
   .about-us .container {
@@ -1865,26 +1927,40 @@ a {
   }
 
   /* PROJECTS */
+  .top-banner {
+    height: 700px;
+  }
   .projects {
-    height: 4500px;
+    height: 2900px;
+    overflow: visible;
+  }
+  .projects .container {
+    overflow: hidden;
+    width: 95%;
+    height: 95%;
   }
   .projects h1 {
-    font-size: 4rem;
+    font-size: 2.8rem;
   }
   .projects p {
-    font-size: 1.8rem !important;
+    font-size: 1.1rem !important;
   }
   .projects .projects-container {
     row-gap: 4rem;
     width: 100%;
   }
   .projects .projects-container .project {
+    overflow: hidden;
     width: 100%;
-    height: 1250px;
+    height: 800px;
     box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
   }
+  .projects .projects-container .project .image {
+    width: 100%;
+    height: 40%;
+  }
   .projects .projects-container .project .image .first {
-    right: 30%;
+    right: 25%;
   }
   .projects .projects-container .project .image .second {
     right: 25%;
@@ -1894,35 +1970,41 @@ a {
     position: relative;
   }
   .projects .projects-container .project h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding: 0rem 2rem;
+    margin-bottom: 1rem;
   }
   .projects .projects-container .project p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    padding: 0rem 2rem;
+    margin-bottom: 3rem;
   }
   .projects .projects-container .project a {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
-
-
 
   /* MEET OUR CAPTAIN  */
   .our-captain {
-    height: 1800px;
+    height: 1200px;
   }
   .our-captain .fill {
     display: none;
   }
   .our-captain .container {
-    width: 95%;
+    width: 100%;
+    row-gap: 2rem;
+    height: 100%;
   }
   .our-captain .content-left {
     max-width: 95%;
-    height: 40%;
+    height: 400px;
     z-index: 2;
   }
   .our-captain .content-left img {
     height: 100%;
     width: auto;
+    position: relative;
+    right: 25%;
   }
   .our-captain .content-right {
     z-index: 2;
@@ -1931,42 +2013,44 @@ a {
     margin-top: 2rem;
   }
   .our-captain .content-right h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-bottom: 3rem;
   }
   .our-captain .content-right p {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
   .our-captain .content-right h6 {
     font-size: 2rem;
   }
 
-
   /* DONATE */
   .donate {
-    height: 1000px;
+    height: 700px;
   }
   .donate .container {
     max-width: 100%;
   }
   .donate .container h2 {
-    font-size: 5rem;
-    padding: 0 4rem;
-    margin-bottom: 3rem;
+    font-size: 3rem;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    line-height: 3.5rem;
   }
   .donate .container p {
-    font-size: 2rem;
-    margin-bottom: 5rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    padding: 0 4rem;
   }
   .donate .container .btn-2 {
     width: 400px;
-    font-size: 1.8rem;
-    padding: 1.5rem 0rem;
+    font-size: 1.1rem;
+    padding: 1rem 0rem;
+    width: 70%;
   }
 
   /* ==== CONTACT US === */
   .contact-us {
-    height: 2500px;
+    height: 1700px;
     width: 100%;
   }
   .contact-us .container {
@@ -1976,35 +2060,41 @@ a {
     width: 90%;
   }
   .contact-us .content-left h2 {
-    font-size: 5rem;
-  }
-  .contact-us .content-left p {
-    font-size: 1.8rem;
-  }
-  .contact-us .content-left h6 {
     font-size: 2.5rem;
   }
+  .contact-us .content-left p {
+    font-size: 1.1rem;
+  }
+  .contact-us .content-left h6 {
+    font-size: 1.4rem;
+  }
   .contact-us .content-left i {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .contact-us .content-right {
     width: 100%;
-    height: 1600px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  .contact-us .content-right form {
+    width: 100%;
+    height: 100%;
+  }
   .contact-us .content-right input {
-    width: 90%;
-    height: 80px;
-    margin-top: 1rem;
+    font-size: 1rem !important;
+    position: relative;
+    width: 100%;
+    height: 50px;
     font-size: 1.8rem;
   }
   .contact-us .content-right textarea {
-    width: 90%;
-    height: 250px;
-    margin-top:  1rem;
-    margin-bottom: 4rem;
+    font-size: 1rem !important;
+    width: 100%;
+    height: 150px;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
     font-size: 1.8rem;
   }
   .contact-us .content-right input[type="submit"] {
@@ -2013,60 +2103,81 @@ a {
 
   /* ====== map ====== */
   .map {
-    height: 1000px;
+    height: 700px;
   }
   /* === FOOTER ===== */
   #top-footer {
-    height: 1600px;
+    height: 1200px;
   }
   #top-footer .container {
     width: 95%;
   }
   #top-footer h3 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
   }
   #top-footer p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 3rem;
   }
   #top-footer i {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
   #top-footer .mobile-link {
     flex-direction: column;
-    row-gap: 6rem;
+    row-gap: 4rem;
   }
-  #top-footer .mobile-link .container-2, .container-3 {
+  #top-footer .mobile-link .container-2,
+  .container-3 {
     width: 100%;
   }
-  #top-footer .mobile-link .container-2, .container-3 a {
-    font-size: 1.8rem;
+  #top-footer .mobile-link .container-2,
+  .container-3 a {
+    font-size: 1.1rem;
+  }
+  #bottom-footer {
+    height: 100px !important;
   }
   #bottom-footer {
     height: 150px;
   }
   #bottom-footer p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   #bottom-footer i {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
   }
+
 }
+
 
 /* 320PX SCREEN WIDTH */
 @media (max-width: 320px) {
+  .slider {
+    height: 1200px;
+  }
   .slider .content-left h1 {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
   .slider .content-left p {
     font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .slider .content-left a {
+    font-size: 1rem;
+  }
+  .slider .content-left .link {
+    row-gap: 1rem;
+  }
+  .slider .content-left .link .btn-1 {
+    font-size: 1.2rem;
   }
   .slider .content-right {
-    left: .5rem;
+    left: 0.5rem;
   }
   .how-we-help .container .content-left {
     width: 95%;
+    height: 300px !important;
   }
   .how-we-help .container .content-left img {
     right: 10%;
@@ -2088,7 +2199,7 @@ a {
     column-gap: 1rem;
   }
   .about-us {
-    height: 1000px;
+    height: 1050px;
   }
   .about-us .content-right {
     height: 260px;
@@ -2102,6 +2213,9 @@ a {
   }
   .about-us .content-left p {
     font-size: 0.9rem;
+  }
+  .project .container h1 {
+    font-size: 2rem !important;
   }
   .our-captain .content-right h2 {
     font-size: 2.4rem;
@@ -2118,11 +2232,20 @@ a {
   .contact-us .content-right input[type="submit"] {
     width: 80%;
   }
+  .donate {
+    height: 600px;
+  }
+  .donate .container h1 {
+    font-size: 2rem  !important;
+  }
   .donate .container p {
     font-size: 0.9rem;
   }
   .donate .container .btn-2 {
     width: 70%;
+  }
+  .contact-us {
+    height: 1800px;
   }
   #top-footer .container {
     max-width: 90%;
@@ -2137,7 +2260,7 @@ a {
     font-size: 1.5rem;
   }
   #bottom-footer {
-    column-gap: .5rem;
+    column-gap: 0.5rem;
   }
   #bottom-footer i {
     font-size: 1rem;
