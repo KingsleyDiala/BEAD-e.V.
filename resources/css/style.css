@@ -683,9 +683,9 @@ a {
 /* ======================== POP UP FORM ============================= */
 .pop-up-form {
   max-width: 500px;
-  height: 600px;
+  height: 750px;
   background-color: var(--background-fill);
-  padding: 4rem 4rem;
+  padding: 4rem 2rem;
   border-radius: 0.5rem;
   margin: auto;
   display: grid;
@@ -697,8 +697,16 @@ a {
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
 }
 .pop-up-form form {
+  width: 100%;
   display: grid;
   place-items: center;
+}
+.pop-up-form form h2 {
+  margin-bottom: 2rem;
+  color: var(--dark-text-color);
+  padding: 0 2rem;
+  font-size: 2rem;
+  text-align: center;
 }
 .pop-up-form input {
   width: 85%;
@@ -864,7 +872,7 @@ a {
   place-content: center;
 }
 .top-banner .crum-container {
-  width: 20%;
+  width: 320px;
   height: 50px;
   background-color: var(--accent-color);
   display: flex;
@@ -893,10 +901,9 @@ a {
 .projects {
   overflow: hidden;
   width: 100%;
-  height: 1200px;
+  height: fit-content;
   display: grid;
   place-items: center;
-  position: relative;
 }
 .projects .container {
   height: 70%;
@@ -922,56 +929,57 @@ a {
   justify-content: center;
   align-items: center;
 }
-.projects .projects-container .project {
+.projects .container .projects-container .single-project {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 32%;
-  height: 90%;
+  height: 80%;
   position: relative;
   background-color: rgb(247, 247, 247);
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
 }
-.projects .projects-container .project .image {
+.projects .projects-container .single-project .image {
   width: 100%;
   height: 42%;
   position: relative;
   overflow: hidden;
   border-bottom: 10px solid var(--accent-color);
 }
-.projects .projects-container .project .image img {
+.projects .projects-container .single-project .image img {
   width: auto;
   height: 100%;
   position: relative;
-  right: 2rem;
+  right: 0rem;
   transition: transform 1s ease;
 }
-.projects .projects-container .project .image img:hover {
+.projects .projects-container .single-project .image img:hover {
   transform: scale(1.1);
 }
-.projects .projects-container .project .image .first {
-  right: 5rem;
+.projects .projects-container .single-project .image .first {
+  right: 0rem;
 }
-.projects .projects-container .project p {
+.projects .projects-container .single-project p {
   color: var(--dark-text-color);
   text-align: left;
   padding: 0 1rem 0 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   opacity: 0.6;
 }
-.projects .projects-container .project h3 {
+.projects .projects-container .single-project h3 {
   text-align: center;
   margin: 3rem 0rem 2rem;
   font-size: 2rem;
+  padding: 0rem 1rem;
 }
-.projects .projects-container .project .btn-2 {
+.projects .projects-container .single-project .btn-2 {
   padding: 1rem 3rem;
   text-align: center;
 }
-.projects .projects-container .project .btn-2:hover {
+.projects .projects-container .single-project .btn-2:hover {
   border: 2px solid var(--accent-color);
   color: var(--accent-color) !important;
 }
@@ -980,17 +988,18 @@ a {
 /* ======================== PROJECT PAGE END ============================ */
 
 /* ================= TEENIES PROJECT START ==================== */
-.teenies-project {
+.project {
   width: 100%;
-  height: 2500px;
+  height: fit-content;
   display: grid;
   place-items: center;
+  padding: 6rem 0;
 }
-.teenies-project .container {
+.project .container {
   max-width: 1200px;
-  height: 80%;
+  height: 100%;
 }
-.teenies-project .container .image-container {
+.project .container .image-container {
   overflow: hidden;
   width: 1000px;
   height: 600px;
@@ -999,13 +1008,13 @@ a {
   box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
   border-bottom: 10px solid var(--accent-color);
 }
-.teenies-project .container .image-container img {
+.project .container .image-container img {
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center;
 }
-.teenies-project .container .heading-box {
+.project .container .heading-box {
   width: 1000px;
   height: 190px;
   background-color: var(--background-fill);
@@ -1018,29 +1027,36 @@ a {
   margin-bottom: 3rem;
   border-bottom: 5px solid var(--background-fill-grey);
 }
-.teenies-project .container .heading-box h1 {
+.project .container .heading-box h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: var(--accent-color);
 }
-.teenies-project .container .heading-box p {
+.project .container .heading-box p {
   color: var(--dark-text-color);
   font-size: 1.2rem;
   margin-bottom: 1rem;
   opacity: 0.7;
 }
-.teenies-project .container .text-container {
+.project .container .text-container {
   width: 1000px;
   height: auto;
   padding: 0 1rem;
 }
-.teenies-project .container .text-container p {
+.project .container .text-container .heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.project .container .text-container p {
   color: var(--dark-text-color);
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  opacity: 0.9;
+  opacity: 0.8;
 }
-.teenies-project .container .text-image {
+.project .container .text-image {
   width: 100%;
   height: 300px;
   display: flex;
@@ -1049,14 +1065,15 @@ a {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.teenies-project .container .text-image .container {
+.project .container .text-image .container {
   overflow: hidden;
   width: 49%;
   height: 100%;
   box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
   border-radius: .5rem;
+  border: 5px solid var(--accent-color);
 }
-.teenies-project .container .text-image .container img {
+.project .container .text-image .container img {
   width: 100%;
   height: auto;
 }
@@ -1243,6 +1260,24 @@ a {
   }
 }
 
+
+@media (max-width: 1200px) {
+  .projects .container {
+    width: 1000px;
+  }
+  .project .container {
+    width: 900px;
+  }
+  .project .container .image-container{
+    width: 900px;
+  }
+  .project .container .heading-box {
+    width: 900px;
+  }
+  .project .container .text-container {
+    width: 900px;
+  }
+}
 /* ============================= */
 /* WIDTH 1024PX )*/
 @media (max-width: 1024px) {
@@ -1322,8 +1357,13 @@ a {
 
 /* ============================= */
 /* PROJECTS */
+.projects {
+  display: grid;
+  place-content: center;
+  width: 100%;
+}
   .projects .container {
-    width: 900px;
+    width: 85% !important;
   }
   .projects h1 {
     font-size: 3rem;
@@ -1331,26 +1371,50 @@ a {
   .projects .projects-container {
     column-gap: 1.5rem;
   }
-  .projects .projects-container .project {
+  .projects .container p {
+    margin-bottom: 1rem;
+  }
+  .projects .projects-container .single-project {
     height: 90%;
   }
-  .projects .projects-container .project .image {
+  .projects .projects-container .single-project .image {
     height: 40%;
   }
-  .projects .projects-container .project .image img {
-    right: 4rem;
+  .projects .projects-container .single-project .image img {
+    right: 2rem;
   }
-  .projects .projects-container .project .image .first {
-    right: 8rem;
+  .projects .projects-container .single-project .image .first {
+    right: 3rem;
   }
-  .projects .projects-container .project p {
+  .projects .projects-container .single-project p {
     margin-bottom: 2rem;
   }
-  .projects .projects-container .project h3 {
+  .projects .projects-container .single-project h3 {
     padding: 0 2rem;
     margin: 2rem 0rem 2rem;
     font-size: 1.8rem;
   }
+
+  /* PROJECT */
+  .project {
+    padding: 5rem 0rem;
+  }
+  .project .container {
+    width: 750px;
+  }
+  .project .container .image-container{
+    width: 750px;
+  }
+  .project .container .heading-box {
+    width: 750px;
+  }
+  .project .container .text-container {
+    width: 750px;
+}
+.project .container .text-image .container img {
+  width: auto;
+  height: 100%;
+}
 }
 
 @media (max-width: 1200px) {
@@ -1455,6 +1519,14 @@ a {
   /* SLIDER */
   .slider {
     height: 1100px;
+  }
+  .project {
+    display: grid;
+    place-items: center;
+  }
+  .project .container {
+    max-width: 90%;
+    height: 100%;
   }
 }
 
@@ -1643,42 +1715,50 @@ a {
     width: 200px;
   }
   .projects {
-    height: 3500px;
+    height: fit-content !important;
+    padding: 5rem 0;
   }
   .projects .container {
-    width: 660px;
-    height: 90%;
+    width: 80%;
+    height: 100% !important;
+  }
+  .projects .container h1 {
+    display: none;
   }
   .projects .container p {
     margin-bottom: 0rem;
     font-size: 1.3rem;
     opacity: 0.7;
+    display: none;
   }
   .projects .projects-container {
     flex-direction: column;
     row-gap: 2rem;
+    height: 100%;
   }
-  .projects .projects-container .project {
-    width: 100%;
-    height: 30%;
+  .projects .projects-container .single-project {
+    width: 90% !important;
+    height: 800px !important;
   }
 
-  .projects .projects-container .project .image {
-    height: 55%;
+  .projects .projects-container .single-project .image {
+    height: 50%;
   }
-  .projects .projects-container .project .image img {
+  .projects .projects-container .single-project .image img {
     right: 0rem;
   }
-  .projects .projects-container .project .image .first {
+  .projects .projects-container .single-project .image .first {
     right: 0;
   }
-  .projects .projects-container .project p {
+  .projects .projects-container .single-project p {
     padding: 0 2rem 0 4rem;
     margin-bottom: 4rem;
     margin-top: 1rem;
+    display: block;
   }
-  .projects .projects-container .project h3 {
+  .projects .projects-container .single-project h3 {
     text-align: left;
+    display: block;
   }
   /* meet our captain */
   .our-captain {
@@ -1824,7 +1904,91 @@ a {
     width: 100%;
     font-size: 1.3rem;
   }
+  
+  /* PROJECT */
+
+  .top-banner .crum-container {
+    width: 300px;
+  }
+  .project .container .image-container{
+    width: 100%;
+    height: 450px;
+  }
+  .project .container .heading-box {
+    width: 100%;
+  }
+  .project .container .text-container {
+    width: 100%;
 }
+.project .container .text-image {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.project .container .text-image .container {
+    width: 49%;
+    height: 210px;
+}
+.project .container .text-image .container img {
+  width: 100%;
+  height: auto;
+}
+}
+
+
+@media (max-width: 670px) {
+  .project {
+    display: grid;
+    place-content: center;
+  }
+  .project .container {
+    width: 90%;
+  }
+  .project .container .heading-box {
+    height: 250px;
+    width: 100% !important;
+  }
+  .project .container .image-container {
+    width: 100% !important;
+    overflow: hidden;
+  }
+  .project .container .heading-box h1 {
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .project p {
+    font-size: 1.1rem !important;
+  }
+  .projects .container {
+    width: 90%;
+    height: 90%;
+}
+.project .container .text-image {
+  flex-direction: column;
+  height: 700px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  row-gap: 2rem;
+}
+.project .container .text-image .container {
+  width: 100% !important;
+  height: 400px  !important;
+}
+.project .container .text-container {
+  width: 100%;
+}
+.project .container .image-container{
+  width: 100%;
+  height: 350px;
+  border-radius: 0rem;
+}
+.project .container .text-image .container {
+  width: 80%;
+  height: 49%;
+  box-shadow: none;
+  border-radius: .2rem;
+}
+}
+
 
 /* MEDIA QUERY FOR SCREEN WIDTH 500PX */
 @media (max-width: 500px) {
@@ -1986,16 +2150,24 @@ a {
 
   /* PROJECTS */
   .top-banner {
-    height: 700px;
+    height: 500px;
   }
   .projects {
-    height: 2900px;
-    overflow: visible;
+    overflow: hidden;
   }
   .projects .container {
-    overflow: hidden;
-    width: 95%;
-    height: 95%;
+    overflow: visible;
+    width: 95%  !important;
+    height: 100% !important;
+  }
+  .project .container .image-container  {
+    max-width: 100% !important;
+  }
+  .project .container .heading-box {
+    max-width: 100% !important;
+  }
+  .project .container .text-container {
+    max-width: 100% !important;
   }
   .projects h1 {
     font-size: 2.8rem;
@@ -2007,38 +2179,45 @@ a {
     row-gap: 4rem;
     width: 100%;
   }
-  .projects .projects-container .project {
+  .projects .projects-container .single-project {
     overflow: hidden;
     width: 100%;
-    height: 800px;
+    height: 700px !important;
     box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
   }
-  .projects .projects-container .project .image {
+  .projects .projects-container .single-project .image {
     width: 100%;
     height: 40%;
   }
-  .projects .projects-container .project .image .first {
-    right: 25%;
+
+  .projects .projects-container .single-project .image .first {
+    right: 0%;
   }
-  .projects .projects-container .project .image .second {
-    right: 25%;
+  .projects .projects-container .single-project .image .second {
+    right: 0%;
   }
-  .projects .projects-container .project .first {
+  .projects .projects-container .single-project .first {
     right: 7rem;
     position: relative;
   }
-  .projects .projects-container .project h3 {
+  .projects .projects-container .single-project h3 {
     font-size: 2rem;
     padding: 0rem 2rem;
     margin-bottom: 1rem;
   }
-  .projects .projects-container .project p {
+  .projects .projects-container .single-project p {
     font-size: 1.1rem;
     padding: 0rem 2rem;
     margin-bottom: 3rem;
   }
-  .projects .projects-container .project a {
+  .projects .projects-container .single-project a {
     font-size: 1.1rem;
+  }
+  .project .container .text-image {
+    max-width: 100% !important;
+  }
+  .project .container .text-image .container {
+    max-width: 100% !important;
   }
 
   /* MEET OUR CAPTAIN  */
@@ -2081,6 +2260,16 @@ a {
     font-size: 2rem;
   }
 
+
+  /* ==== PROJECT ====== */
+  .project .container .text-image {
+    height: 400px !important;
+    width: 80%;
+  }
+  .project .container .text-image .container img {
+    height: auto;
+    width: 100%;
+  }
   /* DONATE */
   .donate {
     height: 700px;
@@ -2206,8 +2395,29 @@ a {
     font-size: 1.5rem;
   }
 
+  /* ====== POP UP FORM ====== */
+  .pop-up-form {
+    max-width: 99%;
+    height: 90vh;
+  }
+
 }
 
+
+@media (max-width: 407px) {
+  .project .container .heading-box {
+    height: 300px;
+    width: 100% !important;
+  }
+  .project .container .text-image {
+    height: 400px !important;
+    width: 90%;
+  }
+  .project .container .text-image .container img {
+    height: auto;
+    width: 100%;
+  }
+}
 
 /* 320PX SCREEN WIDTH */
 @media (max-width: 320px) {
@@ -2289,6 +2499,18 @@ a {
   }
   .contact-us .content-right input[type="submit"] {
     width: 80%;
+  }
+  .projects .container {
+    width: 85% !important;
+  }
+  .projects .projects-container .single-project h3 {
+    margin: 2rem 0rem 0rem;
+  }
+  .projects .projects-container .single-project p {
+    margin-bottom: 2rem;
+  }
+  .projects .container .projects-container .single-project {
+    height: 700px !important;
   }
   .donate {
     height: 600px;

@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bead.eV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Über uns | Bead.eV</title>
     <link rel="icon" type="png/image" href="./img/Logo 1.png">
 
-
-    <!-- CSS STYLESHEETS -->
+    <!-- CSS STYLESHEET -->
     <link rel="stylesheet" href="./resources/css/style.css" />
     <link rel="stylesheet" href="./resources/css/pop-up_main.css">
     <link
@@ -18,26 +17,27 @@
       crossorigin="anonymous"
     />
 
-    <!-- JQUERY -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-    <!-- ANIMATIONS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+        <!-- JQUERY -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   </head>
+  
   <body>
     <!-- ========================== -->
     <!-- HEADER DESKTOP -->
     <header id="header-desktop">
       <div class="container">
         <div class="logo">
-          <a href="./index.html" class="logo-img"><img src="./img/Logo 1.png" alt=""></a>
+          <a href="#slider" class="logo-img"><img src="./img/Logo 1.png" alt=""></a>
         </div>
         <nav>
           <ul>
             <li><a href="./index.html">Startseite</a></li>
             <li><a href="./about us.html">Über uns</a></li>
             <li><a href="#">Spenden</a></li>
-            <li><a href="./projects.html">Projekte</a></li>
+            <li><a href="#">Projekte</a></li>
             <li><a href="#donate">Freiwilligenarbeit </a></li>
             <li><a class="btn-1-5" href="#contact-us">Kontakt</a></li>
           </ul>
@@ -50,7 +50,7 @@
     <header id="mobile-header">
       <nav class="nav container">
         <div class="logo">
-          <a href="./index.html" class="logo-img"><img src="./img/Logo 1.png" alt=""></a>
+          <a href="#slider" class="logo-img"><img src="./img/Logo 1.png" alt=""></a>
         </div>
         <div class="hamburger">
           <i id="open" class="fas fa-bars"></i>
@@ -61,37 +61,44 @@
             <li><a class="link" href="./index.html">Startseite</a></li>
             <li><a class="link" href="./about us.html">Über uns</a></li>
             <li><a class="link" href="#">Spenden</a></li>
-            <li><a class="link" href="./projects.html">Projekte</a></li>
-            <li><a class="link" href="#donate">Freiwilligenarbeit </a></li>
+            <li><a class="link" href="#">Projekte</a></li>
+            <li><a class="link" href="#">Freiwilligenarbeit </a></li>
             <li><a class="link" href="#contact-us">Kontakt</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <!-- ========================== -->
-    <!-- HEADER SLIDER -->
-    <section id="slider" class="slider">
-      <img src="./img/stipes.png" alt="Stripes" class="foreground">
+
+    <!-- ============== TOP BANNER ======================= -->
+    <section class="top-banner" id="top-banner">
       <div class="container">
-        <div class="content-left">
-          <h1 class="animate__animated animate__heartBeat animate__delay-1s">Wer am <br> meisten dient, <br> erntet am meisten</h1>
-          <p class="animate__animated animate__flash animate__delay-2s">
-            Den Menschen ein Lächeln ins Gesicht zu zaubern, ist für die freiwilligen Helfer, Sponsoren und Unterstützer von Bead.e.V eine positive und freudige Erfahrung.
-          </p>
-          <div class="link" >
-            <a class="btn-1" href="#contact-us">kontaktieren Sie uns</a>
-            <a href="#contact-us">Freiwillige werden</a>
-          </div>
+        <div class="crum-container">
+          <a href="./index.html">Startseite</a>
+          <p>.</p>
+          <a href="./projects.html">Über uns</a>
         </div>
-        <div class="content-right">
-          <img class="background"
-            src="./img/psychotherapist-psychiatrist-therapy-psychologist-counseling-session-mental-health-psychotherapy-help_t20_O0ykEm.jpg"
-            alt="People teamwork community"
-          />
+        <h1>ÜBER UNS</h1>
+      </div>
+    </section>
+
+
+    <!-- ========================== -->
+    <!-- ABOUT US -->
+    <section id="about-us" class="about-us">
+      <div class="container">
+        <div class="content-left zoom-in">
+          <h2>Unsere Mission</h2>
+          <p>Der Verein “BEAD e.V.” versteht sich als Unterstützer für Menschen mit Migrationshintergrund. Zweck des Vereins is die Förderrung der Hilfe für politisch, rassisch oder religiös Verfolgte, für Flüchtlinge, Vertiebene, Krigsbeschädigte und Kriegsgefangene, die Förderung internationaler Gesinnung, der Toleranz auf allen Gebieten der Kultur und des Völkerverständigungsgedankens und die Förderung des bürgerschaflichen Engagements zugunsten gemeinnütziger, mildtätiger und kirchlicher Zweck.</p>
+          <a href="#contact-us" class="btn-2">Kontakt aufnehmen</a>
+          <a id="volunteer" href="#"> Freiwillige werden</a>
+        </div>
+        <div class="content-right right-container">
+          <img src="./img/people-team-teamwork-group-support-together-unity-community-cooperation-hand-friendship-partnership_t20_Wg3XOg.jpg" alt="people in a team together">
         </div>
       </div>
     </section>
+
 
     <!-- ========================== -->
     <!-- HOW WE CAN HELP YOU -->
@@ -131,21 +138,6 @@ Entwicklung.
       </div>
     </section>
 
-    <!-- ========================== -->
-    <!-- ABOUT US -->
-    <section id="about-us" class="about-us">
-      <div class="container">
-        <div class="content-left zoom-in">
-          <h2>Unsere Mission</h2>
-          <p>Der Verein “BEAD e.V.” versteht sich als Unterstützer für Menschen mit Migrationshintergrund. Zweck des Vereins is die Förderrung der Hilfe für politisch, rassisch oder religiös Verfolgte, für Flüchtlinge, Vertiebene, Krigsbeschädigte und Kriegsgefangene, die Förderung internationaler Gesinnung, der Toleranz auf allen Gebieten der Kultur und des Völkerverständigungsgedankens und die Förderung des bürgerschaflichen Engagements zugunsten gemeinnütziger, mildtätiger und kirchlicher Zweck.</p>
-          <a href="#contact-us" class="btn-2">Kontakt aufnehmen</a>
-          <a id="volunteer" href="#"> Freiwillige werden</a>
-        </div>
-        <div class="content-right right-container">
-          <img src="./img/people-team-teamwork-group-support-together-unity-community-cooperation-hand-friendship-partnership_t20_Wg3XOg.jpg" alt="people in a team together">
-        </div>
-      </div>
-    </section>
 
     <!-- ================= PROJECTS =============== -->
     <section class="projects" id="projects">
@@ -165,7 +157,7 @@ Entwicklung.
           <!-- PROJECT 2 -->
           <div class="single-project animate__animated animate__backInUp animate__delay-1s" id="project">
             <div class="image">
-              <img class="second" src="./img/little-children-putting-their-hands-together-outdoors-unity-team-work-friendship-concept_t20_azO77n.jpg" alt="Kids hands together">
+              <img class="second" src="./img/little-children-putting-their-hands-together-outdoors-unity-team-work-friendship-concept_t20_azO77n.jpg" alt="">
             </div>
             <h3>Teenies</h3>
             <p>Mediale Kommunikation zur Diskriminierungsbekämpfung unter Jugendlichen</p>
@@ -184,6 +176,36 @@ Entwicklung.
       </div>
     </section>
 
+
+
+  <!-- DONATE -->
+  <section id="donate" class="donate">
+        <div class="container">
+          <h2 class="animate__animated animate__bounceInUp">Bereit, anderen Menschen zu helfen?</h2>
+          <p>werden Sie Freiwilliger bei BEAD e.V.</p>
+          <a href="#test-form" class="btn-2 popup-with-form">Freiwillige werden</a>
+        </div>
+      </section>
+
+
+ <!-- =====================   POP UP FORM ========================== -->
+ <div id="test-form" class="mfp-hide white-popup-block pop-up-form">
+  <form  action="POST">
+    <h2>Bitte füllen Sie das Formular aus</h2>
+    <!-- Name -->
+    <input type="text" name="Vollständiger Name" id="name" placeholder="Vollständiger Name">
+    <!-- Email -->
+    <input type="email" name="Email" required placeholder="Ihre E-Mail" id="email">
+    <!-- phone -->
+    <input type="number" name="Telefon" id="phone" placeholder="Telefon">
+    <!-- message -->
+    <textarea placeholder="Ihre Nachricht schreiben..." name="Nachricht" id="message" cols="30" rows="10"></textarea>
+    <!-- Submit -->
+    <input class="btn-2" type="submit" name="submit" id="submit" value="Senden" >
+  </form>
+</div>
+
+
     <!-- ========================== -->
     <!-- OUR CAPTAIN -->
     <section id="our-captain" class="our-captain">
@@ -201,38 +223,8 @@ Entwicklung.
       </div>
     </section>
 
-    <!-- ========================== -->
-    <!-- DONATE -->
-    <section id="donate" class="donate">
-      <div class="container">
-        <h2 class="animate__animated animate__fast">Bereit, anderen Menschen zu helfen?</h2>
-        <p>werden Sie Freiwilliger bei BEAD e.V.</p>
-        <a href="#test-form" class="btn-2 popup-with-form">Freiwillige werden</a>
-      </div>
-    </section>
 
-
-      <!-- =====================   POP UP FORM ========================== -->
-      <div id="test-form" class="mfp-hide white-popup-block pop-up-form">
-        <form  action="POST">
-          <h2>Bitte füllen Sie das Formular aus</h2>
-          <!-- Name -->
-          <input type="text" name="Vollständiger Name" id="name" placeholder="Vollständiger Name">
-          <!-- Email -->
-          <input type="email" name="Email" required placeholder="Ihre E-Mail" id="email">
-          <!-- phone -->
-          <input type="number" name="Telefon" id="phone" placeholder="Telefon">
-          <!-- message -->
-          <textarea placeholder="Ihre Nachricht schreiben..." name="Nachricht" id="message" cols="30" rows="10"></textarea>
-          <!-- Submit -->
-          <input class="btn-2" type="submit" name="submit" id="submit" value="Senden" >
-        </form>
-</div>
-
-
-
-
-    <!-- ========================== -->
+        <!-- ========================== -->
     <!-- CONTACT US -->
     <section id="contact-us" class="contact-us">
       <div class="container">
@@ -266,9 +258,8 @@ Entwicklung.
                 </div>
                 </div>
           </div>
-          <!-- CONTACT FORM -->
           <div class="content-right">
-            <form  action="POST">
+            <form action="POST">
               <!-- Name -->
               <input type="text" name="Vollständiger Name" id="name" placeholder="Vollständiger Name">
               <!-- Email -->
@@ -282,17 +273,9 @@ Entwicklung.
             </form>
           </div>
         </div>
+
       </div>
     </section>
-
-
-
-
-    <!-- ========================== MAP SECTION  ================== -->
-    <section class="map" id="map">
-      <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2510.538692732585!2d11.030376915945157!3d51.00619617955588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a46d6350e2b001%3A0x2088472a8c05365c!2sBA%20Bildungsakademie%20GmbH!5e0!3m2!1sde!2sde!4v1634911693198!5m2!1sde!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
 
 
     <!-- ========================== -->
@@ -330,9 +313,8 @@ Entwicklung.
       <i class="far fa-copyright"></i>
       <p>2021 BEAD e.V All rights reserved.</p>
     </footer>
-    
 
-    <!-- javascript files -->
+    <!-- JAVASCRIPT -->
     <script src="./resources/js/main.js"></script>
     <script src="./resources/js/animation.js"></script>
     <script src="./resources/js/pop-up_main.js"></script>

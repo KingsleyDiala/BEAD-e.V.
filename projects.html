@@ -16,6 +16,10 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+
+        <!-- JQUERY -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   </head>
@@ -31,7 +35,7 @@
         <nav>
           <ul>
             <li><a href="./index.html">Startseite</a></li>
-            <li><a href="./index.html">Über uns</a></li>
+            <li><a href="./about us.html">Über uns</a></li>
             <li><a href="#">Spenden</a></li>
             <li><a href="#">Projekte</a></li>
             <li><a href="#donate">Freiwilligenarbeit </a></li>
@@ -55,7 +59,7 @@
         <div class="nav_links show">
           <ul>
             <li><a class="link" href="./index.html">Startseite</a></li>
-            <li><a class="link" href="#about-us">Über uns</a></li>
+            <li><a class="link" href="./about us.html">Über uns</a></li>
             <li><a class="link" href="#">Spenden</a></li>
             <li><a class="link" href="#">Projekte</a></li>
             <li><a class="link" href="#">Freiwilligenarbeit </a></li>
@@ -70,11 +74,11 @@
     <section class="top-banner" id="top-banner">
       <div class="container">
         <div class="crum-container">
-          <a href="./index.html">Home</a>
+          <a href="./index.html">Startseite</a>
           <p>.</p>
-          <a href="./projects.html">Projects</a>
+          <a href="./projects.html">Projekte</a>
         </div>
-        <h1>PROJECTS</h1>
+        <h1>PROJEKTE</h1>
       </div>
     </section>
 
@@ -82,35 +86,35 @@
     <!-- ================= PROJECTS =============== -->
     <section class="projects" id="projects">
       <div class="container" id="container">
-        <h1>Our Projects</h1>
-        <p>Help Us Now</p>
+        <h1>Unsere Projekte</h1>
+        <p>Jetzt helfen</p>
         <div class="projects-container">
           <!-- PROJECT 1 -->
-          <div class="project animate__animated animate__backInUp" id="project">
+          <div class="single-project animate__animated animate__backInUp" id="project">
             <div class="image">
               <img class="first" src="./img/psychotherapist-psychiatrist-therapy-psychologist-counseling-session-mental-health-psychotherapy-help_t20_O0ykEm.jpg" alt="">
             </div>
-            <h3>Save Poor Children</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde quasi tempora autem reprehenderit eligendi.</p>
-            <a href="#" class="btn-2">View More</a>
+            <h3>Interkulturelle Bildung</h3>
+            <p>Befähigung von Schulkindern mit Migrationshintergrund durch Zugang zu Technologie und interkulturelle Bildung</p>
+            <a href="./interkulturelle-bildung.html" class="btn-2">Mehr anzeigen</a>
           </div>
           <!-- PROJECT 2 -->
-          <div class="project animate__animated animate__backInUp animate__delay-1s" id="project">
+          <div class="single-project animate__animated animate__backInUp animate__delay-1s" id="project">
             <div class="image">
               <img class="second" src="./img/little-children-putting-their-hands-together-outdoors-unity-team-work-friendship-concept_t20_azO77n.jpg" alt="">
             </div>
             <h3>Teenies</h3>
             <p>Mediale Kommunikation zur Diskriminierungsbekämpfung unter Jugendlichen</p>
-            <a href="./project-tennies.html" class="btn-2">View More</a>
+            <a href="./project-tennies.html" class="btn-2">Mehr anzeigen</a>
           </div>
           <!-- PROJECT 3 -->
-          <div class="project animate__animated animate__backInUp animate__delay-2s" id="project">
+          <div class="single-project animate__animated animate__backInUp animate__delay-2s" id="project">
             <div class="image">
               <img src="./img/volunteer_t20_b68ebX.jpg" alt="">
             </div>
             <h3>Save Poor Children</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis perspiciatis nostrum officiis assumenda animi repellendus?</p>
-            <a href="#" class="btn-2">View More</a>
+            <a href="#" class="btn-2">Mehr anzeigen</a>
           </div>
         </div>
       </div>
@@ -128,21 +132,22 @@
       </section>
 
 
-  <!-- =====================   POP UP FORM ========================== -->
-  <div id="test-form" class="mfp-hide white-popup-block pop-up-form">
-        <form  action="POST">
-          <!-- Name -->
-          <input type="text" name="Vollständiger Name" id="name" placeholder="Vollständiger Name">
-          <!-- Email -->
-          <input type="email" name="Email" required placeholder="Ihre E-Mail" id="email">
-          <!-- phone -->
-          <input type="number" name="Telefon" id="phone" placeholder="Telefon">
-          <!-- message -->
-          <textarea placeholder="Ihre Nachricht schreiben..." name="Nachricht" id="message" cols="30" rows="10"></textarea>
-          <!-- Submit -->
-          <input class="btn-2" type="submit" name="submit" id="submit" value="Senden" >
-        </form>
-  </div>
+ <!-- =====================   POP UP FORM ========================== -->
+ <div id="test-form" class="mfp-hide white-popup-block pop-up-form">
+  <form  action="POST">
+    <h2>Bitte füllen Sie das Formular aus</h2>
+    <!-- Name -->
+    <input type="text" name="Vollständiger Name" id="name" placeholder="Vollständiger Name">
+    <!-- Email -->
+    <input type="email" name="Email" required placeholder="Ihre E-Mail" id="email">
+    <!-- phone -->
+    <input type="number" name="Telefon" id="phone" placeholder="Telefon">
+    <!-- message -->
+    <textarea placeholder="Ihre Nachricht schreiben..." name="Nachricht" id="message" cols="30" rows="10"></textarea>
+    <!-- Submit -->
+    <input class="btn-2" type="submit" name="submit" id="submit" value="Senden" >
+  </form>
+</div>
 
 
         <!-- ========================== -->
