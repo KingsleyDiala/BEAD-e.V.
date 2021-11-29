@@ -2398,7 +2398,7 @@ a {
   /* ====== POP UP FORM ====== */
   .pop-up-form {
     max-width: 99%;
-    height: 90vh;
+    height: auto;
   }
 
 }
