@@ -1011,9 +1011,7 @@ a {
 }
 .project .container .image-container img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
+  height: 100%;
 }
 .project .container .heading-box {
   width: 1000px;
@@ -1047,6 +1045,7 @@ a {
 .project .container .text-container .heading {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  margin-top: 3rem;
   color: var(--accent-color);
   text-transform: uppercase;
   text-decoration: underline;
@@ -1077,6 +1076,9 @@ a {
 .project .container .text-image .container img {
   width: 100%;
   height: auto;
+}
+.project .container i {
+  font-size: 1.rem;
 }
 /* ======================== TEENIES PROJECT END ======================== */
 
@@ -2168,7 +2170,7 @@ a {
   }
   .projects .container {
     overflow: visible;
-    width: 95%  !important;
+    width: 98%  !important;
     height: 100% !important;
   }
   .project .container .image-container  {
@@ -2230,6 +2232,16 @@ a {
   .project .container .text-image .container {
     max-width: 100% !important;
   }
+  .project .container i {
+    font-size: 1.2rem;
+  }
+  .project .container span {
+    font-size: 1rem;
+  }
+  .project .container .project-3 img {
+    height: 100%;
+    width: 100%;
+  }
 
   /* MEET OUR CAPTAIN  */
   .our-captain {
@@ -2280,6 +2292,9 @@ a {
   .project .container .text-image .container img {
     height: auto;
     width: 100%;
+  }
+  .project .container .text-container .heading {
+    font-size: 1.3rem;
   }
   /* DONATE */
   .donate {
@@ -2522,6 +2537,16 @@ a {
   }
   .projects .container .projects-container .single-project {
     height: 700px !important;
+  }
+  .top-banner .crum-container {
+    left: 2%;
+  }
+  .project .container .text-container .heading {
+    font-size: 1.2rem;
+  }
+  .project .container .text-image .project-3 img {
+    height: 100%;
+    width: 130%;
   }
   .donate {
     height: 600px;
