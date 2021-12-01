@@ -7,7 +7,7 @@
   --dark-text-color: #21203c;
   --light-text-color: #fff;
   --background-fill: #f4f4f4;
-  --background-fill-grey: #F1F0E6;
+  --background-fill-grey: #f1f0e6;
   --font: "Work Sans", sans-serif;
 }
 
@@ -985,7 +985,6 @@ a {
   color: var(--accent-color) !important;
 }
 
-
 /* ======================== PROJECT PAGE END ============================ */
 
 /* ================= TEENIES PROJECT START ==================== */
@@ -1070,7 +1069,7 @@ a {
   width: 49%;
   height: 100%;
   box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.2);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 5px solid var(--accent-color);
 }
 .project .container .text-image .container img {
@@ -1078,7 +1077,7 @@ a {
   height: auto;
 }
 .project .container i {
-  font-size: 1.rem;
+  font-size: 1rem;
 }
 /* ======================== TEENIES PROJECT END ======================== */
 
@@ -1255,7 +1254,6 @@ a {
   }
 }
 
-
 /* ============================== */
 /* MEDIA QUERY */
 @media screen and (max-width: 2000px) {
@@ -1273,7 +1271,6 @@ a {
   }
 }
 
-
 @media (max-width: 1200px) {
   .projects .container {
     width: 1000px;
@@ -1281,7 +1278,7 @@ a {
   .project .container {
     width: 900px;
   }
-  .project .container .image-container{
+  .project .container .image-container {
     width: 900px;
   }
   .project .container .heading-box {
@@ -1368,13 +1365,13 @@ a {
     width: 50%;
   }
 
-/* ============================= */
-/* PROJECTS */
-.projects {
-  display: grid;
-  place-content: center;
-  width: 100%;
-}
+  /* ============================= */
+  /* PROJECTS */
+  .projects {
+    display: grid;
+    place-content: center;
+    width: 100%;
+  }
   .projects .container {
     width: 85% !important;
   }
@@ -1415,7 +1412,7 @@ a {
   .project .container {
     width: 750px;
   }
-  .project .container .image-container{
+  .project .container .image-container {
     width: 750px;
   }
   .project .container .heading-box {
@@ -1423,11 +1420,11 @@ a {
   }
   .project .container .text-container {
     width: 750px;
-}
-.project .container .text-image .container img {
-  width: auto;
-  height: 100%;
-}
+  }
+  .project .container .text-image .container img {
+    width: auto;
+    height: 100%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1759,6 +1756,8 @@ a {
   }
   .projects .projects-container .single-project .image img {
     right: 0rem;
+    height: 100%;
+    width: auto;
   }
   .projects .projects-container .single-project .image .first {
     right: 0;
@@ -1917,13 +1916,13 @@ a {
     width: 100%;
     font-size: 1.3rem;
   }
-  
+
   /* PROJECT */
 
   .top-banner .crum-container {
     width: 300px;
   }
-  .project .container .image-container{
+  .project .container .image-container {
     width: 100%;
     height: 450px;
   }
@@ -1932,21 +1931,20 @@ a {
   }
   .project .container .text-container {
     width: 100%;
-}
-.project .container .text-image {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.project .container .text-image .container {
+  }
+  .project .container .text-image {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .project .container .text-image .container {
     width: 49%;
     height: 210px;
+  }
+  .project .container .text-image .container img {
+    width: 100%;
+    height: auto;
+  }
 }
-.project .container .text-image .container img {
-  width: 100%;
-  height: auto;
-}
-}
-
 
 @media (max-width: 670px) {
   .project {
@@ -1974,34 +1972,33 @@ a {
   .projects .container {
     width: 90%;
     height: 90%;
+  }
+  .project .container .text-image {
+    flex-direction: column;
+    height: 700px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    row-gap: 2rem;
+  }
+  .project .container .text-image .container {
+    width: 100% !important;
+    height: 400px !important;
+  }
+  .project .container .text-container {
+    width: 100%;
+  }
+  .project .container .image-container {
+    width: 100%;
+    height: 350px;
+    border-radius: 0rem;
+  }
+  .project .container .text-image .container {
+    width: 80%;
+    height: 49%;
+    box-shadow: none;
+    border-radius: 0.2rem;
+  }
 }
-.project .container .text-image {
-  flex-direction: column;
-  height: 700px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  row-gap: 2rem;
-}
-.project .container .text-image .container {
-  width: 100% !important;
-  height: 400px  !important;
-}
-.project .container .text-container {
-  width: 100%;
-}
-.project .container .image-container{
-  width: 100%;
-  height: 350px;
-  border-radius: 0rem;
-}
-.project .container .text-image .container {
-  width: 80%;
-  height: 49%;
-  box-shadow: none;
-  border-radius: .2rem;
-}
-}
-
 
 /* MEDIA QUERY FOR SCREEN WIDTH 500PX */
 @media (max-width: 500px) {
@@ -2106,7 +2103,7 @@ a {
     max-width: 100%;
   }
   .how-we-help .container .content-right i {
-    display:  none;
+    display: none;
   }
   .how-we-help .fill {
     z-index: 0;
@@ -2170,10 +2167,10 @@ a {
   }
   .projects .container {
     overflow: visible;
-    width: 98%  !important;
+    width: 98% !important;
     height: 100% !important;
   }
-  .project .container .image-container  {
+  .project .container .image-container {
     max-width: 100% !important;
   }
   .project .container .heading-box {
@@ -2282,7 +2279,6 @@ a {
   .our-captain .content-right h6 {
     font-size: 2rem;
   }
-
 
   /* ==== PROJECT ====== */
   .project .container .text-image {
@@ -2426,9 +2422,7 @@ a {
     max-width: 99%;
     height: auto;
   }
-
 }
-
 
 @media (max-width: 407px) {
   .project .container .heading-box {
@@ -2552,7 +2546,7 @@ a {
     height: 600px;
   }
   .donate .container h1 {
-    font-size: 2rem  !important;
+    font-size: 2rem !important;
   }
   .donate .container p {
     font-size: 0.9rem;
