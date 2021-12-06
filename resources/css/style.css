@@ -2162,6 +2162,7 @@ a {
   /* PROJECTS */
   .top-banner {
     height: 500px;
+    overflow: hidden;
   }
   .projects {
     overflow: hidden;
@@ -2282,6 +2283,9 @@ a {
   }
 
   /* ==== PROJECT ====== */
+  .project {
+    overflow: hidden;
+  }
   .project .container .text-image {
     height: 400px !important;
     width: 80%;
