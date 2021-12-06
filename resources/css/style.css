@@ -2068,7 +2068,8 @@ a {
   }
   /* ===== HOW WE CAN HELP ====== */
   .how-we-help {
-    height: 1200px;
+    height: fit-content;
+    padding: 3rem 0rem;
   }
   .how-we-help .container {
     position: relative;
