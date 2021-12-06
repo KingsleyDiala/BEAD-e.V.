@@ -993,6 +993,7 @@ a {
   display: grid;
   place-items: center;
   padding: 6rem 0;
+  overflow: hidden;
 }
 .project .container {
   max-width: 1200px;
