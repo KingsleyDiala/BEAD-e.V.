@@ -216,7 +216,6 @@ a {
   animation: counter-slide-left 1s forwards;
 }
 .slider .content-left h1 {
-  text-transform: capitalize;
   word-spacing: 0.5rem;
   /* animation: slide-in-left 1s;
   animation-fill-mode: forwards; */
