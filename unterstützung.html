@@ -16,15 +16,16 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!-- JQUERY -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <!-- Animation -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    /> -->
   </head>
 
   <body>
@@ -92,7 +93,7 @@
 
     <!-- ========================== -->
     <!-- EHRENAMT -->
-    <section id="about-us volunteer" class="about-us volunteer">
+    <section id="volunteer" class="about-us volunteer">
       <div class="container">
         <div class="content-left zoom-in">
           <h2>Ehrenamt</h2>
@@ -108,7 +109,7 @@
             Idee, um unsere Arbeit zu bereichern? Dann melden Sie sich bei uns!
           </p>
           <a href="./contact us.html" class="btn-2">Kontakt aufnehmen</a>
-          <a id="volunteer" href="#test-form" class=" popup-with-form"> Freiwillige*r werden</a>
+          <a id="volunteer" class="remove" href="#test-form" class=" popup-with-form"> Freiwillige*r werden</a>
         </div>
         <div class="content-right right-container">
           <img src="./img/volunteer.jpg" alt="people in a team together" />
@@ -116,46 +117,22 @@
       </div>
     </section>
 
-    <!-- ========================== -->
-    <!-- MEMBERSHIP -->
-    <section id="about-us membership" class="about-us membership">
-      <div class="container">
-        <div class="content-left zoom-in">
-          <h2>Mitgliedschaft</h2>
-          <p>
-            Unser Verein finanziert sich rein durch Spenden, Mitgliedsbeiträge
-            und Projektgelder. Er ist deshalb stetig auf kontinuierliche
-            Unterstützung und neue Mitglieder angewiesen. Werden auch Sie
-            Mitglied und unterstützen uns mit einem jährlichen Beitrag von
-            mindestens 20 Euro. Die Beitrittserklärung finden Sie hier als
-            PDF-Datei zum Download. Sie können uns die ausgefüllte und
-            unterschriebene Erklärung per Post oder Mail an service@bead-ev.de
-            zukommen lassen.
-          </p>
-        </div>
-        <div class="content-right right-container">
-          <img src="./img/membership.jpg" alt="people in a team together" />
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================== -->
+        <!-- ========================== -->
     <!-- SPENDEN -->
-    <section id="how-we-help donation" class="how-we-help donation">
+    <section id="donation membership" class="donation membership">
       <div class="container">
-        <div class="content-left left-transition">
+        <div class="content-right left-transition">
           <div class="fill"></div>
           <img
             src="./img/donation.jpg"
             alt="A hand with a heart"
           />
         </div>
-        <div class="content-right">
+        <div class="content-left">
           <h2 class="head">Spenden</h2>
-          <div class="flex">
+          <div >
             <i class="fa-solid fa-hands-holding-heart"></i>
             <div class="text">
-              <h6 class="h6-1">Hilfe im Alltag</h6>
               <p class="text">
                 Unsere Arbeit wird vor allem durch Spenden finanziert. Unser
                 Verein für Flüchtlinge, Asylsuchende und Migration e.V. ist ein
@@ -178,6 +155,29 @@
         </div>
       </div>
     </section>
+
+    <!-- ========================== -->
+    <!-- MEMBERSHIP -->
+    <section id="membership" class="membership">
+      <div class="container">
+        <div class="content-left zoom-in">
+          <h2>Mitgliedschaft</h2>
+          <p>
+            Unser Verein finanziert sich rein durch Spenden, Mitgliedsbeiträge und Projektgelder. Er ist deshalb stetig auf kontinuierliche Unterstützung und neue Mitglieder angewiesen. 
+          </p>
+          <p>
+            Werden auch Sie Mitglied und unterstützen uns mit einem jährlichen Beitrag von mindestens 20 Euro. Die Beitrittserklärung finden Sie hier als <a class="pdf-download" href="./img/membership.jpg" download="IMAGE" >PDF-Datei</a> zum Download. Sie können uns die ausgefüllte und unterschriebene Erklärung per Post oder Mail an service@bead-ev.de zukommen lassen. 
+          </p>
+          <button>
+            <a id="volunteer" href="#test-form" class=" popup-with-form btn-2 join-us"> Freiwillige*r werden</a>
+          </button>
+        </div>
+        <div class="content-right right-container">
+          <img src="./img/business-woman.png" alt="people in a team together" />
+        </div>
+      </div>
+    </section>
+
 
     <!-- DONATE -->
     <section id="donate" class="donate">

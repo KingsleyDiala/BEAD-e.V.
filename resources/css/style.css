@@ -290,6 +290,9 @@ a {
   z-index: 1;
 }
 
+
+
+
 /* ============================== */
 /* HOW WE HELP */
 .how-we-help {
@@ -382,8 +385,9 @@ a {
   justify-content: center;
 }
 .about-us .content-left {
+  padding: 3rem 0;
   max-width: 60%;
-  height: 450px;
+  height: fit-content;
   background-color: var(--background-fill);
   transform: scale(0.4);
   opacity: 0;
@@ -400,7 +404,6 @@ a {
 .about-us .content-left h2 {
   color: var(--dark-text-color);
   margin-bottom: 1.5rem;
-  margin-top: 4rem;
 }
 .about-us .content-left p {
   opacity: 0.6;
@@ -429,6 +432,10 @@ a {
   position: relative;
   transition: all 1s ease;
   transition-delay: 0.5s;
+}
+.about-us .right-container {
+  opacity: 1;
+  margin-right: 0;
 }
 .about-us .right-active {
   margin-right: 0;
@@ -483,7 +490,7 @@ a {
 .about-us-2 .container-left hr {
   margin-bottom: 1rem;
   width: 60%;
-  border: 2px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 .about-us-2 .container-left .values {
   display: flex;
@@ -507,9 +514,9 @@ a {
   overflow: hidden;
   border-radius: .6rem;
   position: relative;
-  border: 5px solid var(--accent-color);
   transition: all 1s ease;
   margin-right: -20%;
+  box-shadow: 1rem 1rem 2rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
 .about-us-2 .container-right img {
@@ -523,31 +530,44 @@ a {
 }
 
 
+/* ============================== */
+/* SERVICE */
+.service .flex {
+  display: flex;
+  column-gap: 2rem;
+}
+.service .content-left .text {
+  margin-bottom: .7rem;
+}
+.service .content-right img {
+  display: inline-block;
+  margin: auto;
+}
+
+
 
 /* ============================== */
 /* VOLUNTEER */
-
 .volunteer {
   height: fit-content;
-  padding: 150px 0;
+  padding: 5rem 0;
 }
 .volunteer .container {
-  flex-flow: row-reverse;
+  flex-direction: row-reverse;
 }
-.volunteer .container .content-left {
-  height: fit-content;
-  overflow: hidden;
-  padding: 3rem 0;
+.volunteer .content-left {
+height: fit-content;
+overflow: hidden;
+padding: 2rem 0;
 }
-.volunteer .container .content-left h2 {
-  margin-top: 0;
+.volunteer .content-left h2 {
+  margin-top: 0 !important;
 }
-.volunteer .container .content-right {
-  border-top-left-radius: 0rem;
-  border-bottom-left-radius: 0rem;
-  border-top-right-radius: 0.6rem;
-  border-bottom-right-radius: 0.6rem;
-}
+
+
+
+/* ============================== */
+/* DONATION */
 
 
 
@@ -1190,6 +1210,84 @@ a {
 }
 /* ======================== TEENIES PROJECT END ======================== */
 
+/* ==================  MEMBERSHIP ================ */
+.membership {
+  overflow: hidden;
+  height: fit-content;
+  padding: 7rem 0;
+  display: grid;
+  place-content: center;
+}
+.membership .container {
+  display: flex;
+  column-gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  max-width: 1200px;
+}
+
+/* ========== IMAGE CONTAINER ============= */
+.membership .content-right {
+  position: relative;
+  height: 400px;
+  width: 45%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.membership .content-right img {
+  height: 100%;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+/* ======== TEXT CONTAINER ========== */
+.membership .content-left {
+  width: 45%;
+  height: fit-content;
+}
+.membership .content-left h2 {
+  margin-bottom: 2rem;
+}
+.membership .content-left p {
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  color: var(--dark-text-color);
+  opacity: .8;
+}
+.membership .content-left button {
+  border: none;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.membership .content-left .pdf-download {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* ========== DONATION ============= */
+.donation {
+  background-color: var(--background-fill);
+}
+.donation .content-right {
+  box-shadow: 1rem 1rem 2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+.donation .content-left {
+  width: 40%;
+}
+.donation .content-left .flex {
+  display: flex;
+  margin-top: 2rem;
+  column-gap: 1rem;
+}
+
+.donation .content-left p {
+  text-align: justify;
+}
+
+
+
 /* ============================== */
 /* UTILITIES */
 .btn-1 {
@@ -1370,18 +1468,111 @@ a {
     top: 12%;
     right: 28%;
   }
-
-  .about-us .content-left h2 {
-    margin-top: 2rem;
-  }
-
-
   .our-captain .content-left img {
     right: 40%;
   }
 }
 
 @media (max-width: 1200px) {
+  /* slider */
+  .slider .foreground {
+    top: 15%;
+    right: 34%;
+  }
+  .slider .content-left {
+    margin-left: 2rem;
+  }
+  .slider .content-left h1 {
+    font-size: 2.5rem;
+  }
+  .slider .content-right {
+    max-width: 45%;
+  }
+  .slider .content-right img {
+    right: 40%;
+  }
+
+  /* HOW CAN WE HELP YOU */
+  .how-we-help .container {
+    column-gap: 4rem;
+  }
+  .how-we-help .container .content-left {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    max-width: 45%;
+  }
+  .how-we-help .container .content-right {
+    max-width: 40%;
+  }
+  .how-we-help .container .content-right h2 {
+    font-size: 2rem;
+  }
+  .how-we-help .container .content-right p {
+    width: 100%;
+  }
+
+  /* ABOUT US */
+  .about-us {
+    overflow: hidden;
+  }
+  .about-us .content-left {
+    height: fit-content;
+    max-width: 60%;
+  }
+  .about-us .content-left h2 {
+    font-size: 2rem;
+  }
+  .about-us .content-left p {
+    margin-bottom: 3rem;
+    font-size: 0.9rem;
+  }
+  .about-us .content-right {
+    max-width: 50%;
+  }
+  /* meet our captain */
+  .our-captain .content-left {
+    max-width: 40%;
+  }
+  .our-captain .content-right {
+    max-width: 40%;
+  }
+  .our-captain .content-left img {
+    right: 30%;
+    height: 100%;
+    width: auto;
+  }
+  .our-captain .content-right h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .our-captain .content-right p {
+    margin-bottom: 2rem;
+  }
+     /* ========= ABOUT US 2 ============ */
+    .about-us-2 {
+      overflow: hidden;
+    }
+    .about-us-2 .container {
+      width: 90%;
+      column-gap: 3rem;
+      justify-content: center;
+    }
+    .about-us-2 .container-right {
+      width: 53%;
+      height: 650px;
+    }
+  /* contact us */
+  .contact-us .container {
+    width: 90%;
+  }
+  .contact-us .content-left {
+    width: 40%;
+  }
+  .contact-us .content-right {
+    width: 60%;
+  }
+
+  /* ========= PROJECTS ============ */
+
   .projects .container {
     width: 1000px;
   }
@@ -1398,23 +1589,15 @@ a {
     width: 900px;
   }
 
-    /* ========= ABOUT US ============ */
-    .about-us-2 {
-      overflow: hidden;
-    }
-    .about-us-2 .container {
-      width: 90%;
-      column-gap: 3rem;
-      justify-content: center;
-    }
-    .about-us-2 .container-right {
-      width: 53%;
-      height: 650px;
-    }
 }
+
+
+
 /* ============================= */
 /* WIDTH 1024PX )*/
 @media (max-width: 1024px) {
+
+  /* ========= HERO / SLIDER ============ */
   .slider .foreground {
     top: 15%;
   }
@@ -1430,6 +1613,8 @@ a {
     font-size: 1rem;
   }
 
+  /* ========= HOW WE HELP ============ */
+
   .how-we-help .container .content-left img {
     right: 6rem;
     position: relative;
@@ -1440,6 +1625,8 @@ a {
   .how-we-help .content-right h2 {
     font-size: 1.8rem;
   }
+
+  /* ========= ABOUT US  ============ */
 
   .about-us .content-left > * {
     left: 10%;
@@ -1453,6 +1640,10 @@ a {
     font-size: 1.9rem;
     margin-top: 2rem;
   }
+
+
+
+  /* ========= OUR CAPTAIN ============ */
 
   .our-captain .content-left {
     max-width: 40%;
@@ -1472,6 +1663,9 @@ a {
   .our-captain .content-right p {
     margin-bottom: 2rem;
   }
+
+
+  /* ========= CONTACT US ============ */
 
   .contact-us .content-left {
     left: 0%;
@@ -1549,93 +1743,33 @@ a {
     width: auto;
     height: 100%;
   }
-}
 
-@media (max-width: 1200px) {
-  /* slider */
-  .slider .foreground {
-    top: 15%;
-    right: 34%;
+  /* ========= VOLUNTEER ============ */
+  .volunteer .content-left {
+    height: fit-content;
   }
-  .slider .content-left {
-    margin-left: 2rem;
-  }
-  .slider .content-left h1 {
-    font-size: 2.5rem;
-  }
-  .slider .content-right {
-    max-width: 45%;
-  }
-  .slider .content-right img {
-    right: 40%;
+  .volunteer .content-left p {
+    width: 80%;
   }
 
-  /* HOW CAN WE HELP YOU */
-  .how-we-help .container {
-    column-gap: 4rem;
-  }
-  .how-we-help .container .content-left {
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-    max-width: 45%;
-  }
-  .how-we-help .container .content-right {
-    max-width: 40%;
-  }
-  .how-we-help .container .content-right h2 {
-    font-size: 2rem;
-  }
-  .how-we-help .container .content-right p {
-    width: 100%;
-  }
 
-  /* ABOUT US */
-  .about-us {
-    overflow: hidden;
+  /* ==================  MEMBERSHIP ================ */
+  .membership {
+    display: flex;
   }
-  .about-us .content-left {
-    height: 60%;
-    max-width: 60%;
+  .membership .container {
+    width: 80%;
+    column-gap: 3rem;
   }
-  .about-us .content-left h2 {
-    font-size: 2rem;
+  .membership .content-right {
+    width: 50%;
   }
-  .about-us .content-left p {
-    margin-bottom: 3rem;
-    font-size: 0.9rem;
+  .membership .content-left h2 {
+    margin-bottom: 1.5rem;
   }
-  .about-us .content-right {
-    max-width: 50%;
+  .membership .content-left button {
+    margin-top: 1.5rem;
   }
-  /* meet our captain */
-  .our-captain .content-left {
-    max-width: 40%;
-  }
-  .our-captain .content-right {
-    max-width: 40%;
-  }
-  .our-captain .content-left img {
-    right: 30%;
-    height: 100%;
-    width: auto;
-  }
-  .our-captain .content-right h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  .our-captain .content-right p {
-    margin-bottom: 2rem;
-  }
-  /* contact us */
-  .contact-us .container {
-    width: 90%;
-  }
-  .contact-us .content-left {
-    width: 40%;
-  }
-  .contact-us .content-right {
-    width: 60%;
-  }
-
 }
 
 
@@ -1805,9 +1939,10 @@ a {
   /* ABOUT US */
   .about-us {
     overflow: hidden;
-    height: 1300px;
+    height: fit-content;
   }
   .about-us .container {
+    height: 100%;
     overflow: hidden;
     flex-direction: column-reverse;
     justify-content: center;
@@ -1933,7 +2068,7 @@ a {
   }
   /* meet our captain */
   .our-captain {
-    height: 1200px;
+    height: fit-content;
     overflow: hidden;
   }
   .our-captain .container {
@@ -1945,8 +2080,8 @@ a {
     margin-top: 5rem;
   }
   .our-captain .content-left {
-    max-width: 70%;
-    height: 450px;
+    max-width: 80%;
+    height: 550px;
   }
   .our-captain .content-left img {
     right: 0rem !important;
@@ -2103,7 +2238,74 @@ a {
     width: 100%;
     height: auto;
   }
+
+
+
+  /* ============== VOLUNTEER ============ */
+  .volunteer {
+    height: fit-content;
+    padding-bottom: 0;
+  }
+  .volunteer .container {
+    row-gap: 0;
+  }
+  .volunteer .content-left {
+    height: fit-content;
+    max-width: 100%;
+    background-color: var(--background-fill);
+    padding: 4rem 2rem;
+    padding: 3rem 0;
+  }
+  .volunteer .content-left p {
+    margin-bottom: 3rem;
+  }
+  .volunteer .content-left a {
+    margin-top: 0;
+  }
+  .volunteer .content-right {
+    margin-bottom: 0;
+  }
+  .volunteer .remove {
+    display: none;
+  }
+
+
+
+  /* ==================  MEMBERSHIP ================ */
+  .membership {
+    padding-top: 5rem;
+  }
+  .membership .container {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .membership .content-left {
+    width: 100%;
+    padding: 3rem 4rem;
+  }
+  .membership .content-left h2 {
+    font-size: 3rem;
+  }
+  .membership .content-left p {
+    font-size: 1.2rem;
+    opacity: .7;
+  }
+  .membership .content-left button {
+    font-size: 1.2;
+  }
+  .membership .content-right {
+    width: 85%;
+    height: 490px;
+  }
+
+
+
+  /* ==================  MEMBERSHIP ================ */
+  .donation .container {
+    flex-direction: column;
+  }
 }
+
 
 @media (max-width: 670px) {
   .project {
@@ -2271,7 +2473,7 @@ a {
   }
   /* ==== ABOUT US ====== */
   .about-us {
-    height: 1200px;
+    height: fit-content;
     overflow: visible;
     position: relative;
     width: 100%;
@@ -2350,6 +2552,24 @@ a {
   .about-us-2 .container .container-left .values p {
     width: 100%;
   }
+
+
+
+  /* ============== VOLUNTEER ============ */
+  .volunteer {
+    padding: 2rem 0;
+    height: fit-content;
+  }
+  .volunteer .container {
+    row-gap: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  .volunteer .content-left {
+    max-width: 100%;
+    height: fit-content;
+  }
+
 
 
   /* PROJECTS */
@@ -2620,7 +2840,33 @@ a {
     max-width: 99%;
     height: auto;
   }
-}
+
+
+
+    /* ============== MEMBERSHIP ============ */
+    .membership {
+      padding-bottom: 2rem;
+    }
+    .membership .content-left {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .membership .content-left h2 {
+      font-size: 2rem;
+    }
+    .membership .content-left p {
+      font-size: 1.1rem;
+    }
+    .membership .content-left button {
+      font-size: 1.1rem;
+    }
+    .membership .content-right {
+      height: 350px;
+      width: 95%;
+    }
+  }
+
+
 
 @media (max-width: 407px) {
   .project .container .heading-box {
@@ -2685,7 +2931,8 @@ a {
     column-gap: 1rem;
   }
   .about-us {
-    height: 1050px;
+    height: fit-content;
+    padding: 0;
   }
   .about-us .content-right {
     height: 260px;
@@ -2702,6 +2949,10 @@ a {
   }
   .project .container h1 {
     font-size: 2rem !important;
+  }
+  .our-captain {
+    height: fit-content;
+    padding-bottom: 8rem;
   }
   .our-captain .content-right h2 {
     font-size: 2.4rem;
@@ -2720,6 +2971,11 @@ a {
   }
   .contact-us .content-right input[type="submit"] {
     width: 80%;
+  }
+  .project {
+    overflow: hidden;
+    height: fit-content;
+    padding: 0 500px !important;
   }
   .projects .container {
     width: 85% !important;
@@ -2775,5 +3031,47 @@ a {
   }
   #bottom-footer i {
     font-size: 1rem;
+  }
+
+    /* ============== VOLUNTEER ============ */
+  .volunteer {
+    height: fit-content;
+    padding: 0rem 0;
+    margin: 0;
+  }
+  .volunteer .container {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+  }
+  .volunteer .content-left {
+    padding: 2rem .5rem 4rem .5rem;
+    height: fit-content;
+  }
+  .volunteer .content-left a {
+    font-size: .9rem;
+  }
+  .volunteer .content-left p {
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+  .volunteer .content-right {
+    width: 95%;
+  }
+
+  /* ============== TOP BANNER ============ */
+  .top-banner h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+
+
+@media (max-width: 200px) {
+  html {
+    background-color: var(--secondary-color);
+  }
+  body {
+    display: none;
   }
 }
