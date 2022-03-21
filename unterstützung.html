@@ -109,7 +109,6 @@
             Idee, um unsere Arbeit zu bereichern? Dann melden Sie sich bei uns!
           </p>
           <a href="./contact us.html" class="btn-2">Kontakt aufnehmen</a>
-          <a id="volunteer" class="remove" href="#test-form" class=" popup-with-form"> Freiwillige*r werden</a>
         </div>
         <div class="content-right right-container">
           <img src="./img/volunteer.jpg" alt="people in a team together" />
@@ -192,45 +191,26 @@
       </div>
     </section>
 
-    <!-- =====================   POP UP FORM ========================== -->
-    <div id="test-form" class="mfp-hide white-popup-block pop-up-form">
-      <form action="POST">
-        <h2>Bitte füllen Sie das Formular aus</h2>
-        <!-- Name -->
-        <input
-          type="text"
-          name="Vollständiger Name"
-          id="name"
-          placeholder="Vollständiger Name"
-        />
-        <!-- Email -->
-        <input
-          type="email"
-          name="Email"
-          required
-          placeholder="Ihre E-Mail"
-          id="email"
-        />
-        <!-- phone -->
-        <input type="number" name="Telefon" id="phone" placeholder="Telefon" />
-        <!-- message -->
-        <textarea
-          placeholder="Ihre Nachricht schreiben..."
-          name="Nachricht"
-          id="message"
-          cols="30"
-          rows="10"
-        ></textarea>
-        <!-- Submit -->
-        <input
-          class="btn-2"
-          type="submit"
-          name="submit"
-          id="submit"
-          value="Senden"
-        />
-      </form>
-    </div>
+  <!-- =====================   POP UP FORM ========================== -->
+  <div id="test-form" class="mfp-hide white-popup-block pop-up-form">
+    <form action="https://formsubmit.co/ service@bead-ev.de" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="box">
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_autoresponse" value="Ihre Nachricht is angekommen. Wir werden Ihnen so schnell wie möglich eine Rückmeldung senden.">
+    <h2>Bitte füllen Sie das Formular aus</h2>
+    <!-- Name -->
+    <input type="text" name="Vollständiger Name" id="name" placeholder="Vollständiger Name">
+    <!-- Email -->
+    <input type="email" name="Email" required placeholder="Ihre E-Mail" id="email">
+    <!-- phone -->
+    <input type="number" name="Telefon" id="phone" placeholder="Telefon">
+    <!-- message -->
+    <textarea placeholder="Ihre Nachricht schreiben..." name="Nachricht" id="message" cols="30" rows="10"></textarea>
+    <!-- Submit -->
+    <input class="btn-2" type="submit" name="submit" id="submit" value="Senden" >
+  </form>
+</div>
 
     <!-- ========================== MAP SECTION  ================== -->
     <section class="map" id="map">
