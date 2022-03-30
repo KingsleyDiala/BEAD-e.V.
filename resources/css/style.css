@@ -575,14 +575,14 @@ padding: 2rem 0;
 /* OUR CAPTAIN */
 .our-captain {
   width: 100%;
-  height: 700px;
+  height: fit-content;
   display: grid;
   place-items: center;
   padding: 50px 0px;
 }
 .our-captain .container {
   width: 100%;
-  height: 90%;
+  height: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -645,6 +645,7 @@ padding: 2rem 0;
 }
 .our-captain .content-right p {
   opacity: 0.6;
+  margin: 1rem 0;
 }
 .our-captain .content-right h6 {
   margin-top: 3rem;
@@ -2657,7 +2658,7 @@ padding: 2rem 0;
 
   /* MEET OUR CAPTAIN  */
   .our-captain {
-    height: 1200px;
+    height: fit-content;
   }
   .our-captain .fill {
     display: none;
@@ -2681,7 +2682,7 @@ padding: 2rem 0;
   .our-captain .content-right {
     z-index: 2;
     max-width: 80%;
-    height: 700px;
+
     margin-top: 2rem;
   }
   .our-captain .content-right h2 {
