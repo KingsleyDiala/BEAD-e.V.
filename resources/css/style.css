@@ -70,7 +70,7 @@ a {
 }
 
 .current {
-	color: #df3e23;
+  color: #df3e23;
 }
 
 /* ============================== */
@@ -294,9 +294,6 @@ a {
   z-index: 1;
 }
 
-
-
-
 /* ============================== */
 /* HOW WE HELP */
 .how-we-help {
@@ -474,8 +471,8 @@ a {
   justify-content: center;
   align-items: center;
 }
-  /* ==== CONTAINER LEFT ==== */
-  .about-us-2 .container-left {
+/* ==== CONTAINER LEFT ==== */
+.about-us-2 .container-left {
   position: relative;
   width: 45%;
   height: auto;
@@ -489,7 +486,7 @@ a {
   margin-bottom: 2rem;
 }
 .about-us-2 .container-left p {
-  opacity: .7;
+  opacity: 0.7;
 }
 .about-us-2 .container-left hr {
   margin-bottom: 1rem;
@@ -508,7 +505,7 @@ a {
   width: 90%;
 }
 .about-us-2 .container-left .values .num {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 /* ==== CONTAINER RIGHT ==== */
@@ -516,7 +513,7 @@ a {
   width: 46%;
   height: 600px;
   overflow: hidden;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   position: relative;
   transition: all 1s ease;
   margin-right: -20%;
@@ -527,12 +524,11 @@ a {
   height: 100%;
   width: auto;
   position: relative;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 .about-us-2 .container-right img:hover {
   transform: scale(1.05);
 }
-
 
 /* ============================== */
 /* SERVICE */
@@ -541,14 +537,12 @@ a {
   column-gap: 2rem;
 }
 .service .content-left .text {
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
 }
 .service .content-right img {
   display: inline-block;
   margin: auto;
 }
-
-
 
 /* ============================== */
 /* VOLUNTEER */
@@ -560,20 +554,16 @@ a {
   flex-direction: row-reverse;
 }
 .volunteer .content-left {
-height: fit-content;
-overflow: hidden;
-padding: 2rem 0;
+  height: fit-content;
+  overflow: hidden;
+  padding: 2rem 0;
 }
 .volunteer .content-left h2 {
   margin-top: 0 !important;
 }
 
-
-
 /* ============================== */
 /* DONATION */
-
-
 
 /* ============================== */
 /* OUR CAPTAIN */
@@ -944,7 +934,8 @@ padding: 2rem 0;
   display: flex;
   justify-content: space-between;
 }
-#top-footer .mobile-link .container-2, .container-3 {
+#top-footer .mobile-link .container-2,
+.container-3 {
   width: 30%;
   height: 100%;
   display: flex;
@@ -1119,12 +1110,59 @@ padding: 2rem 0;
 
 /* ======================== PROJECT PAGE END ============================ */
 
+/* ================= Gallery Start ==================== */
+.gallery {
+  padding: 100px 0;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.gallery h3 {
+  text-align: center;
+  color: var(--dark-text-color);
+}
+
+.gallery .wrapper {
+  width: 85%;
+  max-width: 1440px;
+  padding: 30px;
+  background-color: beige;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* ================= Impressum ==================== */
+.impressum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+.impressum .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0;
+  row-gap: 1rem;
+  width: 80%;
+  max-width: 1440px;
+}
+.impressum h3 {
+  margin-top: 2rem;
+}
+
 /* ================= TEENIES PROJECT START ==================== */
 .project {
   width: 100%;
   height: fit-content;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 6rem 0;
   overflow: hidden;
 }
@@ -1221,6 +1259,57 @@ padding: 2rem 0;
 }
 /* ======================== TEENIES PROJECT END ======================== */
 
+/* ======================== KIDS RAP WORKSHOP START ======================== */
+.kids-rap-workshop {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.kids-rap-workshop .container {
+  position: relative;
+  padding: 40px 0 100px 0;
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.kids-rap-workshop h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.kids-rap-workshop .container img {
+  width: 450px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 500px) {
+  .kids-rap-workshop .container {
+    width: 90%;
+  }
+  .kids-rap-workshop .container img {
+    width: 100%;
+  }
+  .gallery {
+    padding: 50px 0;
+  }
+  .gallery h3 {
+    font-size: larger;
+  }
+  .gallery .wrapper {
+    width: 96%;
+    padding: 10px;
+  }
+}
+/* ======================== KIDS RAP WORKSHOP END ======================== */
+
 /* ==================  MEMBERSHIP ================ */
 .membership {
   overflow: hidden;
@@ -1262,10 +1351,10 @@ padding: 2rem 0;
   margin-bottom: 2rem;
 }
 .membership .content-left p {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   color: var(--dark-text-color);
-  opacity: .8;
+  opacity: 0.8;
 }
 .membership .content-left button {
   border: none;
@@ -1296,8 +1385,6 @@ padding: 2rem 0;
 .donation .content-left p {
   text-align: justify;
 }
-
-
 
 /* ============================== */
 /* UTILITIES */
@@ -1558,19 +1645,19 @@ padding: 2rem 0;
   .our-captain .content-right p {
     margin-bottom: 2rem;
   }
-     /* ========= ABOUT US 2 ============ */
-    .about-us-2 {
-      overflow: hidden;
-    }
-    .about-us-2 .container {
-      width: 90%;
-      column-gap: 3rem;
-      justify-content: center;
-    }
-    .about-us-2 .container-right {
-      width: 53%;
-      height: 650px;
-    }
+  /* ========= ABOUT US 2 ============ */
+  .about-us-2 {
+    overflow: hidden;
+  }
+  .about-us-2 .container {
+    width: 90%;
+    column-gap: 3rem;
+    justify-content: center;
+  }
+  .about-us-2 .container-right {
+    width: 53%;
+    height: 650px;
+  }
   /* contact us */
   .contact-us .container {
     width: 90%;
@@ -1599,15 +1686,11 @@ padding: 2rem 0;
   .project .container .text-container {
     width: 900px;
   }
-
 }
-
-
 
 /* ============================= */
 /* WIDTH 1024PX )*/
 @media (max-width: 1024px) {
-
   /* ========= HERO / SLIDER ============ */
   .slider .foreground {
     top: 15%;
@@ -1652,8 +1735,6 @@ padding: 2rem 0;
     margin-top: 2rem;
   }
 
-
-
   /* ========= OUR CAPTAIN ============ */
 
   .our-captain .content-left {
@@ -1674,7 +1755,6 @@ padding: 2rem 0;
   .our-captain .content-right p {
     margin-bottom: 2rem;
   }
-
 
   /* ========= CONTACT US ============ */
 
@@ -1763,7 +1843,6 @@ padding: 2rem 0;
     width: 80%;
   }
 
-
   /* ==================  MEMBERSHIP ================ */
   .membership {
     display: flex;
@@ -1782,7 +1861,6 @@ padding: 2rem 0;
     margin-top: 1.5rem;
   }
 }
-
 
 /* ============================= */
 /* WIDTH 900PX  (IPAD)*/
@@ -2003,7 +2081,6 @@ padding: 2rem 0;
 
   .about-us-2 .container {
     justify-content: center;
-
   }
   .about-us-2 .container .container-right {
     display: none;
@@ -2250,8 +2327,6 @@ padding: 2rem 0;
     height: auto;
   }
 
-
-
   /* ============== VOLUNTEER ============ */
   .volunteer {
     height: fit-content;
@@ -2280,8 +2355,6 @@ padding: 2rem 0;
     display: none;
   }
 
-
-
   /* ==================  MEMBERSHIP ================ */
   .membership {
     padding-top: 5rem;
@@ -2299,7 +2372,7 @@ padding: 2rem 0;
   }
   .membership .content-left p {
     font-size: 1.2rem;
-    opacity: .7;
+    opacity: 0.7;
   }
   .membership .content-left button {
     font-size: 1.2;
@@ -2309,14 +2382,11 @@ padding: 2rem 0;
     height: 490px;
   }
 
-
-
   /* ==================  MEMBERSHIP ================ */
   .donation .container {
     flex-direction: column;
   }
 }
-
 
 @media (max-width: 670px) {
   .project {
@@ -2564,8 +2634,6 @@ padding: 2rem 0;
     width: 100%;
   }
 
-
-
   /* ============== VOLUNTEER ============ */
   .volunteer {
     padding: 2rem 0;
@@ -2580,8 +2648,6 @@ padding: 2rem 0;
     max-width: 100%;
     height: fit-content;
   }
-
-
 
   /* PROJECTS */
   .top-banner {
@@ -2852,32 +2918,28 @@ padding: 2rem 0;
     height: auto;
   }
 
-
-
-    /* ============== MEMBERSHIP ============ */
-    .membership {
-      padding-bottom: 2rem;
-    }
-    .membership .content-left {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    .membership .content-left h2 {
-      font-size: 2rem;
-    }
-    .membership .content-left p {
-      font-size: 1.1rem;
-    }
-    .membership .content-left button {
-      font-size: 1.1rem;
-    }
-    .membership .content-right {
-      height: 350px;
-      width: 95%;
-    }
+  /* ============== MEMBERSHIP ============ */
+  .membership {
+    padding-bottom: 2rem;
   }
-
-
+  .membership .content-left {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .membership .content-left h2 {
+    font-size: 2rem;
+  }
+  .membership .content-left p {
+    font-size: 1.1rem;
+  }
+  .membership .content-left button {
+    font-size: 1.1rem;
+  }
+  .membership .content-right {
+    height: 350px;
+    width: 95%;
+  }
+}
 
 @media (max-width: 407px) {
   .project .container .heading-box {
@@ -2986,7 +3048,7 @@ padding: 2rem 0;
   .project {
     overflow: hidden;
     height: fit-content;
-    padding: 0 500px !important;
+    width: 100%;
   }
   .projects .container {
     width: 85% !important;
@@ -3008,7 +3070,7 @@ padding: 2rem 0;
   }
   .project .container .text-image .project-3 img {
     height: 100%;
-    width: 130%;
+    width: auto;
   }
   .donate {
     height: 600px;
@@ -3044,7 +3106,7 @@ padding: 2rem 0;
     font-size: 1rem;
   }
 
-    /* ============== VOLUNTEER ============ */
+  /* ============== VOLUNTEER ============ */
   .volunteer {
     height: fit-content;
     padding: 0rem 0;
@@ -3056,11 +3118,11 @@ padding: 2rem 0;
     height: fit-content;
   }
   .volunteer .content-left {
-    padding: 2rem .5rem 4rem .5rem;
+    padding: 2rem 0.5rem 4rem 0.5rem;
     height: fit-content;
   }
   .volunteer .content-left a {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .volunteer .content-left p {
     margin-bottom: 3rem;
@@ -3076,7 +3138,6 @@ padding: 2rem 0;
     font-size: 2.5rem;
   }
 }
-
 
 @media (max-width: 200px) {
   html {
